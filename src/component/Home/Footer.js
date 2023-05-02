@@ -7,6 +7,7 @@ import config from '../../../config.js';
 export default function Footer() {
     return (
         <HomeStyle>
+            <center>
             <div className='fotterbg'>
                 <Container>
                     <Grid container>
@@ -97,6 +98,7 @@ export default function Footer() {
 
                 </Container>
             </div>
+            </center>
         </HomeStyle>
     )
 }

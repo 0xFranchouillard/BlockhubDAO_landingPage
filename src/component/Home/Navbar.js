@@ -120,6 +120,6 @@ export default function ButtonAppBar() {
                 </Container>
             </div>
         </HomeStyle>
-
-    );
+);
 }
+
