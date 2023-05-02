@@ -1,179 +1,183 @@
 import React from 'react'
-import { Container, Grid, List, ListItem, Hidden, Typography, Box, Button } from '@mui/material';
-import { HomeStyle } from './Style'
+import {Box, Container, Grid, Typography} from '@mui/material';
+import {HomeStyle} from './Style'
 
 
 export default function Sickportfolio() {
-  return (
-    <HomeStyle>
-      <Container>
-        <Typography variant="h4" gutterBottom className='portfolio-text' id='portfolio' >
-          Our sick portfolio
-        </Typography>
+    return (
+        <HomeStyle>
+            <Container>
+                <Typography variant="h4" gutterBottom className='portfolio-text' id='portfolio'>
+                    Our sick portfolio
+                </Typography>
 
-        <Typography variant="h5" gutterBottom className='meme'   >
-          We're not your run-of-the-mill venture capital DAO; we're the meme-fueled maestros of the blockchain universe. Our portfolio stands as a testament to our savvy expertise and our ambitious vision for the future. We handpick the most promising projects, always on the hunt for that next game-changer. Scope out our meme-folio and discover why we're the undisputed top dogs in the crypto playground.
-        </Typography>
-        <Box my={5} >
-          {/* card section started */}
-          <Grid container spacing={4} >
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/Shutter.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Shutter Network
-                  </Typography>
+                <Typography variant="h5" gutterBottom className='meme'>
+                    We're not your run-of-the-mill venture capital DAO; we're the meme-fueled maestros of the blockchain
+                    universe. Our portfolio stands as a testament to our savvy expertise and our ambitious vision for
+                    the future. We handpick the most promising projects, always on the hunt for that next game-changer.
+                    Scope out our meme-folio and discover why we're the undisputed top dogs in the crypto playground.
+                </Typography>
+                <Box my={5}>
+                    {/* card section started */}
+                    <Grid container spacing={4}>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/Shutter.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Shutter Network
+                                    </Typography>
 
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Apparently, it's about this "MEV" thing. We're not sure what it is, but it sounded cool
-                  </Typography>
-
-
-
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/cardshift.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Cardashift
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    A launchpad on Cardano, or so they say. We were tipsy and misclicked, but hey, happy accidents, right? right ???
-                  </Typography>
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Apparently, it's about this "MEV" thing. We're not sure what it is, but it
+                                        sounded cool
+                                    </Typography>
 
 
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/cardshift.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Cardashift
+                                    </Typography>
 
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/RareMind.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    RareMind
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Chess, or "échecs" in French, also means failure. As connoisseurs of the latter, it was our duty to invest in this gem.
-                  </Typography>
-
-
-
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/hashup.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Hash up
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Steam-As-A-Service, minus the banhammer. We've been booted off Steam for bot overload, so we figured a decentralized version couldn't hurt
-                  </Typography>
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        A launchpad on Cardano, or so they say. We were tipsy and misclicked, but hey,
+                                        happy accidents, right? right ???
+                                    </Typography>
 
 
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/RareMind.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        RareMind
+                                    </Typography>
 
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/Kairos.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Kairos
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Our admin is drowning in NFTs, and since there's no liquidity, they're stuck. At least they can get a loan before getting liquidated, thanks to Kairos.
-                  </Typography>
-
-
-
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/stylepro.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    STYLE Protocol
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Making NFTs slightly more useful by teleporting them into other voids filled with empty people.
-                  </Typography>
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Chess, or "échecs" in French, also means failure. As connoisseurs of the latter,
+                                        it was our duty to invest in this gem.
+                                    </Typography>
 
 
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/hashup.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Hash up
+                                    </Typography>
 
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/Convergence.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Convergence
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    We grasped about 10% of their pitch, but it sounded fancy. Fingers crossed they make us rich!
-                  </Typography>
-
-
-
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/Quantix.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Quantix
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    NFTs, yet again. Another attempt to bring liquidity to them. We're starting to suspect one of our admin has too much sway in our decisions.
-                  </Typography>
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Steam-As-A-Service, minus the banhammer. We've been booted off Steam for bot
+                                        overload, so we figured a decentralized version couldn't hurt
+                                    </Typography>
 
 
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/Kairos.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Kairos
+                                    </Typography>
 
-                </div>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} >
-              <div className='port-card' >
-                <Box component="img" src="/images/Entangle.svg" width="100%" className='shutter-img' />
-                <div className='shtrpadign' >
-                  <Typography variant="h4" gutterBottom className='Network-text'  >
-                    Entangle
-                  </Typography>
-
-                  <Typography variant="h4" gutterBottom className='Apparently-text'  >
-                    Layer0, transforming everything into LSD, or something like that. We were sold on the trippy part, so here we are!
-                  </Typography>
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Our admin is drowning in NFTs, and since there's no liquidity, they're stuck. At
+                                        least they can get a loan before getting liquidated, thanks to Kairos.
+                                    </Typography>
 
 
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/stylepro.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        STYLE Protocol
+                                    </Typography>
 
-                </div>
-              </div>
-            </Grid>
-          </Grid>
-          {/* card section ended */}
-        </Box>
-      </Container>
-    </HomeStyle>
-  )
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Making NFTs slightly more useful by teleporting them into other voids filled
+                                        with empty people.
+                                    </Typography>
+
+
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/Convergence.svg" width="100%"
+                                     className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Convergence
+                                    </Typography>
+
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        We grasped about 10% of their pitch, but it sounded fancy. Fingers crossed they
+                                        make us rich!
+                                    </Typography>
+
+
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/Quantix.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Quantix
+                                    </Typography>
+
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        NFTs, yet again. Another attempt to bring liquidity to them. We're starting to
+                                        suspect one of our admin has too much sway in our decisions.
+                                    </Typography>
+
+
+                                </div>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className='port-card'>
+                                <Box component="img" src="/images/Entangle.svg" width="100%" className='shutter-img'/>
+                                <div className='shtrpadign'>
+                                    <Typography variant="h4" gutterBottom className='Network-text'>
+                                        Entangle
+                                    </Typography>
+
+                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                        Layer0, transforming everything into LSD, or something like that. We were sold
+                                        on the trippy part, so here we are!
+                                    </Typography>
+
+
+                                </div>
+                            </div>
+                        </Grid>
+                    </Grid>
+                    {/* card section ended */}
+                </Box>
+            </Container>
+        </HomeStyle>
+    )
 }

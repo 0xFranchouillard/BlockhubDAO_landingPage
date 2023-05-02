@@ -1,33 +1,33 @@
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 
-export const HomeStyle = styled('div')(({ theme }) => ({
-    '& .nav-position':{
+export const HomeStyle = styled('div')(({theme}) => ({
+    '& .nav-position': {
         position: "fixed",
-    width: "100%",
-    top: "0px",
-    zIndex: "10",
+        width: "100%",
+        top: "0px",
+        zIndex: "10",
     },
     '& .Appbar-setting': {
         background: "transparent",
-        boxShadow:"none",
+        boxShadow: "none",
         marginTop: "40px",
         borderRadius: "30px",
         '& .MuiToolbar-root': {
             padding: "unset",
-      
+
         },
-     
+
 
         '& .MuiList-root': {
             display: "inline-flex",
-            marginTop:"10px",
-         
+            marginTop: "10px",
+
         },
-        '& .MuiListItem-root':{
-            paddingLeft:"10px !important",
-            paddingRight:"10px !important",
+        '& .MuiListItem-root': {
+            paddingLeft: "10px !important",
+            paddingRight: "10px !important",
         },
-    
+
         // '& .MuiListItem-root':{
         //     paddingRight:"unset",
         // },
@@ -41,7 +41,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
 
         '& .right-nav': {
             textAlign: "end",
-            '& .MuiList-root':{
+            '& .MuiList-root': {
                 marginTop: "unset",
             },
         },
@@ -49,11 +49,11 @@ export const HomeStyle = styled('div')(({ theme }) => ({
             color: "#5911d9"
         },
     },
-    '& .nav-list-bg-rounded':{
+    '& .nav-list-bg-rounded': {
         background: "rgba(22, 22, 22)",
         border: "1px solid rgba(255, 255, 255, 0.08)",
         borderRadius: "100px",
-        height:"58px",
+        height: "58px",
     },
     '& .logo': {
         width: "34px",
@@ -79,10 +79,10 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         textTransform: "capitalize",
     },
     '& .mob-draw': {
-        '& .MuiList-root':{
-            display:"inline-block !important",
+        '& .MuiList-root': {
+            display: "inline-block !important",
         },
-      
+
         '& .MuiListItemButton-root': {
             color: "#B7B5BA !important",
         },
@@ -177,7 +177,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         fontFamily: "PlusJakartaSans-Bold",
         lineHeight: "64px",
         textAlign: "center",
-        marginTop:"60px",
+        marginTop: "60px",
     },
     '& .Ponzi': {
         color: "#FFFFFF",
@@ -217,7 +217,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         position: "relative",
         borderRadius: "32px",
-        "&:hover":{
+        "&:hover": {
             background: " radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
             border: " 1px solid rgba(255, 255, 255, 0.16)",
         },
@@ -290,7 +290,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         '& .port-card-2': {
             height: "618px",
         },
-    
+
 
     },
 
@@ -300,12 +300,12 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         '& .Genius-text': {
             fontSize: "40px",
         },
-        '& .nav-list-bg-rounded':{
+        '& .nav-list-bg-rounded': {
             background: "unset",
             border: "unset",
             borderRadius: "unset",
         },
-    
+
 
     },
 
@@ -348,24 +348,22 @@ export const HomeStyle = styled('div')(({ theme }) => ({
             textAlign: "center",
             marginTop: "80px",
         },
-        '& .logo-2':{
-            height:"auto",
-            width:"91%",
-            marginTop:"10px",
+        '& .logo-2': {
+            height: "auto",
+            width: "91%",
+            marginTop: "10px",
         },
         '& .aplybtn': {
             width: "116px",
-            fontSize:"12px",
-    
+            fontSize: "12px",
+
         },
         '& .Genius-text': {
             marginTop: "200px",
-    
+
         },
 
     },
-
-
 
 
 }));

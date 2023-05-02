@@ -9,16 +9,16 @@ import Faq from './Faq'
 import Footer from './Footer'
 
 export default function Index() {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Sickportfolio />
-      <Join />
-      <Investment />
-      <Latestnews />
-      <Faq />
-      <Footer />
-    </div>
-  )
+    return (
+        <div>
+            <Navbar/>
+            <Hero/>
+            <Sickportfolio/>
+            <Join/>
+            <Investment/>
+            <Latestnews/>
+            <Faq/>
+            <Footer/>
+        </div>
+    )
 }

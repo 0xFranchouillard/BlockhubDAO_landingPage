@@ -1,24 +1,31 @@
 <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_15_1004)">
-<rect y="0.176514" width="48" height="48" rx="24" fill="#161616" fill-opacity="0.8"/>
-<path d="M30 21.3193V32.7478H18V21.3193C18 18.1634 20.6863 15.605 24 15.605C27.3137 15.605 30 18.1634 30 21.3193Z" stroke="url(#paint0_radial_15_1004)" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30 21.3193V32.7478H18V21.3193C18 18.1634 20.6863 15.605 24 15.605C27.3137 15.605 30 18.1634 30 21.3193Z" stroke="url(#paint1_linear_15_1004)" stroke-opacity="0.7" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round" style="mix-blend-mode:overlay"/>
-<rect x="0.5" y="0.676514" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.08"/>
-</g>
-<defs>
-<filter id="filter0_b_15_1004" x="-32" y="-31.8235" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="16"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_15_1004"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_15_1004" result="shape"/>
-</filter>
-<radialGradient id="paint0_radial_15_1004" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.6209 9.56867) rotate(65.3887) scale(30.6499 23.2097)">
-<stop stop-color="white" stop-opacity="0.8"/>
-<stop offset="1" stop-color="white" stop-opacity="0.32"/>
-</radialGradient>
-<linearGradient id="paint1_linear_15_1004" x1="18.0004" y1="15.605" x2="30.1419" y2="15.7065" gradientUnits="userSpaceOnUse">
-<stop stop-color="#5227FF"/>
-<stop offset="1" stop-color="#6100FF"/>
-</linearGradient>
-</defs>
+    <g filter="url(#filter0_b_15_1004)">
+        <rect y="0.176514" width="48" height="48" rx="24" fill="#161616" fill-opacity="0.8"/>
+        <path d="M30 21.3193V32.7478H18V21.3193C18 18.1634 20.6863 15.605 24 15.605C27.3137 15.605 30 18.1634 30 21.3193Z"
+              stroke="url(#paint0_radial_15_1004)" stroke-width="1.28571" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M30 21.3193V32.7478H18V21.3193C18 18.1634 20.6863 15.605 24 15.605C27.3137 15.605 30 18.1634 30 21.3193Z"
+              stroke="url(#paint1_linear_15_1004)" stroke-opacity="0.7" stroke-width="1.28571" stroke-linecap="round"
+              stroke-linejoin="round" style="mix-blend-mode:overlay"/>
+        <rect x="0.5" y="0.676514" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.08"/>
+    </g>
+    <defs>
+        <filter id="filter0_b_15_1004" x="-32" y="-31.8235" width="112" height="112" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="16"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_15_1004"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_15_1004" result="shape"/>
+        </filter>
+        <radialGradient id="paint0_radial_15_1004" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17.6209 9.56867) rotate(65.3887) scale(30.6499 23.2097)">
+            <stop stop-color="white" stop-opacity="0.8"/>
+            <stop offset="1" stop-color="white" stop-opacity="0.32"/>
+        </radialGradient>
+        <linearGradient id="paint1_linear_15_1004" x1="18.0004" y1="15.605" x2="30.1419" y2="15.7065"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5227FF"/>
+            <stop offset="1" stop-color="#6100FF"/>
+        </linearGradient>
+    </defs>
 </svg>
