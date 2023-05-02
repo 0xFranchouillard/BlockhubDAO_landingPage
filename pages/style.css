@@ -1,0 +1,40 @@
+body{
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family:Inter-Bold ;
+    src: url("../src/assets/font-family/Inter-Bold.ttf");
+}
+@font-face {
+    font-family:Inter-Light;
+    src: url("../src/assets/font-family/Inter-Light.ttf");
+}
+@font-face {
+    font-family:Inter-Medium;
+    src: url("../src/assets/font-family/Inter-Medium.ttf");
+}
+@font-face {
+    font-family:Inter-Regular;
+    src: url("../src/assets/font-family/Inter-Regular.ttf");
+}
+@font-face {
+    font-family:Inter-SemiBold;
+    src: url("../src/assets/font-family/Inter-SemiBold.ttf");
+}
+@font-face {
+    font-family:PlusJakartaSans-Bold;
+    src: url("../src/assets/font-family/PlusJakartaSans-Bold.ttf");
+}
+@media screen and (min-width: 1200px) {
+    .MuiContainer-root {
+        max-width: 1064px;
+        padding: unset;
+    }
+  }
+  .vectors4-investment{
+    background-image: url("../public/images/vectors4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

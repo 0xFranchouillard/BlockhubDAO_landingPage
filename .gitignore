@@ -1,0 +1,4 @@
+#make me a gitignore for a intellij nextjs project
+/.idea/
+/node_modules/
+/.next/
