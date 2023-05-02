@@ -5,5 +5,4 @@ const config = {
     discord: 'https://discord.gg/blockhubdao',
     mail: 'mailto:contact@blockhubdao.com',
 };
-
 export default config;

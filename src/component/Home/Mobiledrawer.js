@@ -52,27 +52,27 @@ export default function TemporaryDrawer() {
                             <div className='mob-draw'>
                                 <List>
                                     <ListItem>
-                                        <ListItemButton className='nav-btn' sx={{color: "white"}}>
+                                        <ListItemButton className='nav-btn' sx={{color: "white"}} href='#portfolio'>
 
                                             Portfolio
                                         </ListItemButton>
 
                                     </ListItem>
                                     <ListItem>
-                                        <ListItemButton className='nav-btn' sx={{color: "white"}}>
+                                        <ListItemButton className='nav-btn' sx={{color: "white"}} href='#thesis'>
                                             Thesis
                                         </ListItemButton>
 
                                     </ListItem>
                                     <ListItem>
-                                        <ListItemButton className='nav-btn' sx={{color: "white"}}>
+                                        <ListItemButton className='nav-btn' sx={{color: "white"}} href='#news'>
 
                                             News
                                         </ListItemButton>
 
                                     </ListItem>
                                     <ListItem>
-                                        <ListItemButton className='nav-btn' sx={{color: "white"}}>
+                                        <ListItemButton className='nav-btn' sx={{color: "white"}} href='#faq'>
                                             FAQ
                                         </ListItemButton>
 
