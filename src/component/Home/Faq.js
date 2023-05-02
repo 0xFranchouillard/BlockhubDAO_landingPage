@@ -7,10 +7,10 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 
 export default function Investment() {
     const [open, setOpen] = React.useState({
-        colapse1: false,
-        colapse2: false,
-        colapse3: false,
-        colapse4: false,
+        colapse1: true,
+        colapse2: true,
+        colapse3: true,
+        colapse4: true,
 
     });
 
