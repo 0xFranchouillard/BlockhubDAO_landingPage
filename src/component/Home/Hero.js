@@ -3,7 +3,6 @@ import {Box, Button, Container, Grid, Typography} from '@mui/material';
 import {HomeStyle} from './Style'
 import config from "../../../config";
 import Link from "next/link";
-
 export default function Hero() {
     return (
         <HomeStyle>
@@ -13,8 +12,6 @@ export default function Hero() {
                 </Typography>
                 <Grid container justifyContent="center">
                     <Grid md={9} lg={8}>
-
-
                         <Typography variant="h3" gutterBottom className='Blockhub-text'>
                             Welcome to Blockhub DAO, your go-to VC DAO for Web 3.0 investments and meme mastery! We're a
                             tight-knit crew of blockchain buffs with a passion for memes, trolling, and everything that
@@ -27,15 +24,13 @@ export default function Hero() {
                                         now </Button>
                                 </a>
                             </Link>
-                            <Box component="img" src="/images/PepeMidPurple.png" width="100%" height="460px" my={3}/>
+                            <Box component="img" src="/images/PepeMidPurple.png" maxwidth="100%" height="460px" my={3}/>
                             <Box component="img" src="/images/partnership.svg" width="100%" my={3}/>
                         </Box>
 
                     </Grid>
                 </Grid>
-
             </Container>
-
         </HomeStyle>
     )
 }
