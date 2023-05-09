@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "preBuild": "npm ci --legacy-peer-deps",
-    "build": "next build --force",
+    "build": "next build",
     "postBuild": "next export",
     "start": "next start",
     "lint": "next lint",
