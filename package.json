@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "preBuild": "npm ci --legacy-peer-deps",
     "build": "next build",
+    "postBuild": "next export",
     "start": "next start",
     "lint": "next lint",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
@@ -18,7 +20,9 @@
     "@mui/material": "latest",
     "next": "latest",
     "prop-types": "latest",
+    "rc-slider": "^10.1.1",
     "react": "latest",
+    "react-compare-slider": "^2.2.0",
     "react-dom": "latest"
   },
   "devDependencies": {

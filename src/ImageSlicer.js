@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
 export default function ImageSlicer() {
     const [sliderPosition, setSliderPosition] = useState(50);
     const handlerRef = useRef(null);

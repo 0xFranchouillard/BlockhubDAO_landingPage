@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useCallback, useEffect, useState} from 'react'
 import {Box, Button, Container, Grid, Typography} from '@mui/material';
 import {HomeStyle} from './Style'
 import config from "../../../config";
 import Link from "next/link";
+import {
+    ReactCompareSlider,
+    ReactCompareSliderHandle,
+    ReactCompareSliderImage
+} from "react-compare-slider";
+
 import ImageSlicer from "../../ImageSlicer";
 export default function Hero() {
+    const handlePositionChange = useCallback(
+        (position) => console.log("[CustomHandle]", position),
+        []
+    );
     return (
         <HomeStyle>
             <Container>
@@ -12,7 +22,7 @@ export default function Hero() {
                     Where Genius and Memes Collide
                 </Typography>
                 <Grid container justifyContent="center">
-                    <Grid md={9} lg={8}>
+                    <Grid item md={9} lg={8}>
                         <Typography variant="h3" gutterBottom className='Blockhub-text'>
                             Welcome to Blockhub DAO, your go-to VC DAO for Web 3.0 investments and meme mastery! We're a
                             tight-knit crew of blockchain buffs with a passion for memes, trolling, and everything that
@@ -25,11 +35,11 @@ export default function Hero() {
                                         now </Button>
                                 </a>
                             </Link>
-                            <ImageSlicer/>
-                            <Box component="img" src="/images/PepeMidPurple.png" maxwidth="100%" height="460px" my={3}/>
+                            <div className="App">
+                                <ImageSlicer />
+                            </div>
                             <Box component="img" src="/images/partnership.svg" width="100%" my={3}/>
                         </Box>
-
                     </Grid>
                 </Grid>
             </Container>

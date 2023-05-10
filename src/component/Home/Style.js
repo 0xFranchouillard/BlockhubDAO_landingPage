@@ -37,6 +37,11 @@ export const HomeStyle = styled('div')(({theme}) => ({
             cursor: "pointer",
             background: "rgba(22, 22, 22, 0.8)",
             borderRadius: "40px",
+            '&:hover': {
+                backdropFilter: "blur(4px)",
+                //Eclaircissement
+                background: "rgba(22, 22, 22, 0.1)",
+            }
         },
 
         '& .right-nav': {
@@ -65,6 +70,9 @@ export const HomeStyle = styled('div')(({theme}) => ({
         border: "1px solid rgba(255, 255, 255, 0.16)",
         boxShadow: "inset 0px -2px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 2px rgba(255, 255, 255, 0.4)",
         borderRadius: "32px",
+        '&:hover': {
+            background: "linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%), radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.32) 100%)",
+        }
     },
     '& .aplybtn': {
         height: "48px",
@@ -77,7 +85,11 @@ export const HomeStyle = styled('div')(({theme}) => ({
         fontSize: "16px",
         fontFamily: "Inter-Medium",
         textTransform: "capitalize",
+        '&:hover': {
+            color: "#8D8A93 !important",
+        }
     },
+
     '& .mob-draw': {
         '& .MuiList-root': {
             display: "inline-block !important",
@@ -217,10 +229,6 @@ export const HomeStyle = styled('div')(({theme}) => ({
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         position: "relative",
         borderRadius: "32px",
-        "&:hover": {
-            background: " radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
-            border: " 1px solid rgba(255, 255, 255, 0.16)",
-        },
         '& svg': {
             position: "absolute",
             right: "19px",
@@ -334,7 +342,9 @@ export const HomeStyle = styled('div')(({theme}) => ({
         '& .thesis': {
             fontSize: "36px",
             lineHeight: "50px",
-
+            hover: {
+                color: "#8D8A93",
+            }
         },
         '& .colapsebtn': {
             '& svg': {
@@ -362,6 +372,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             marginTop: "200px",
 
         },
+
 
     },
 
