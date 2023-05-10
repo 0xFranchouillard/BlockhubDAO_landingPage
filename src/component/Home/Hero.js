@@ -3,6 +3,7 @@ import {Box, Button, Container, Grid, Typography} from '@mui/material';
 import {HomeStyle} from './Style'
 import config from "../../../config";
 import Link from "next/link";
+import ImageSlicer from "./ImageSlicer";
 export default function Hero() {
     return (
         <HomeStyle>
@@ -24,7 +25,7 @@ export default function Hero() {
                                         now </Button>
                                 </a>
                             </Link>
-                            <Box component="img" src="/images/PepeMidPurple.png" maxwidth="100%" height="460px" my={3}/>
+                            <ImageSlicer/>
                             <Box component="img" src="/images/partnership.svg" width="100%" my={3}/>
                         </Box>
 
