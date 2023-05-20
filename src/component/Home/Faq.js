@@ -7,11 +7,10 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 
 export default function Investment() {
     const [open, setOpen] = React.useState({
-        colapse1: true,
-        colapse2: true,
-        colapse3: true,
-        colapse4: true,
-
+        colapse1: false,
+        colapse2: false,
+        colapse3: false,
+        colapse4: false,
     });
 
     return (
@@ -26,7 +25,6 @@ export default function Investment() {
                             <Grid item xs={11} sm={10} md={8}>
 
                                 <div className='colapse-bg'>
-                                    {/* button one started */}
                                     <Button variant="contained" onClick={() => {
                                         setOpen({...open, colapse1: !open.colapse1})
                                     }} className='colapsebtn' color="secondary" fullWidth>What is BlockHub
@@ -62,12 +60,8 @@ export default function Investment() {
                                         </div>
                                     </Collapse>
                                 </div>
-                                {/* button one ended */}
-                                {/* button one started */}
                                 <Box my={2}>
-
                                     <div className='colapse-bg'>
-
                                         <Button variant="contained" onClick={() => {
                                             setOpen({...open, colapse2: !open.colapse2})
                                         }} className='colapsebtn' color="secondary" fullWidth>How does Blockhub DAO
@@ -97,13 +91,11 @@ export default function Investment() {
                                                     remains transparent and is driven by the expertise and insights of
                                                     our knowledgeable crypto native members.
                                                 </Typography>
-
                                             </div>
                                         </Collapse>
                                     </div>
                                 </Box>
-                                {/* button one edned */}
-                                {/* button one started */}
+
                                 <Box my={2}>
 
                                     <div className='colapse-bg'>
@@ -111,7 +103,7 @@ export default function Investment() {
                                         <Button variant="contained" onClick={() => {
                                             setOpen({...open, colapse3: !open.colapse3})
                                         }} className='colapsebtn' color="secondary" fullWidth>What kind of projects are
-                                            you interested in ? {open.colapse2 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                            you interested in ? {open.colapse3 ? <ExpandLess/> : <ExpandMore/>}</Button>
                                         <Collapse in={open.colapse3} timeout="auto" unmountOnExit>
                                             <div className='colapse-inner-pd'>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -130,8 +122,7 @@ export default function Investment() {
                                         </Collapse>
                                     </div>
                                 </Box>
-                                {/* button one edned */}
-                                {/* button one started */}
+
                                 <Box my={2}>
 
                                     <div className='colapse-bg'>
@@ -139,7 +130,7 @@ export default function Investment() {
                                         <Button variant="contained" onClick={() => {
                                             setOpen({...open, colapse4: !open.colapse4})
                                         }} className='colapsebtn' color="secondary" fullWidth>How to Join the
-                                            Elite? {open.colapse2 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                            Elite? {open.colapse4 ? <ExpandLess/> : <ExpandMore/>}</Button>
                                         <Collapse in={open.colapse4} timeout="auto" unmountOnExit>
                                             <div className='colapse-inner-pd'>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -164,7 +155,6 @@ export default function Investment() {
                                         </Collapse>
                                     </div>
                                 </Box>
-                                {/* button one edned */}
                             </Grid>
 
                         </Grid>

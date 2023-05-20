@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Container, Grid, Typography} from '@mui/material';
+import {Box, Container, Grid, Link, Typography} from '@mui/material';
 import {HomeStyle} from './Style'
 
 export default function Investment() {
@@ -14,7 +14,8 @@ export default function Investment() {
                         <Grid container spacing={4} justifyContent="center">
                             <Grid item xs={12} sm={8} md={6} lg={4}>
 
-                                <div className='port-card-2'>
+                                <div className='news-card'>
+                                    <Link href="https://mirror.xyz/0xb69d053fA14F0CEAD7ec9C3D3153EcFF235E7aCD/CaaYqqi_qlqKPQ6ztzwGpxfTQehyrxaJzvFF2S2RNQI" underline ="none" target="_blank">
                                     <Box component="img" src="/images/worlds.svg" width="100%" className='shutter-img'/>
                                     <div className='shtrpadign'>
                                         <Typography variant="h4" gutterBottom className='Asset-text'>
@@ -30,12 +31,14 @@ export default function Investment() {
                                             March 10th, 2023
                                         </Typography>
                                     </div>
+                                    </Link>
                                 </div>
 
                             </Grid>
                             <Grid item xs={12} sm={8} md={6} lg={4}>
 
-                                <div className='port-card-2'>
+                                <div className='news-card'>
+                                    <Link href="https://mirror.xyz/0xb69d053fA14F0CEAD7ec9C3D3153EcFF235E7aCD/dt_SFenAicQ8RcjFxyAI3arZEjSxTbuxg-t-vlzOR_Q" underline ="none" target="_blank">
                                     <Box component="img" src="/images/Convergence-new.svg" width="100%"
                                          className='shutter-img'/>
                                     <div className='shtrpadign'>
@@ -52,12 +55,14 @@ export default function Investment() {
                                             March 4th, 2023
                                         </Typography>
                                     </div>
+                                    </Link>
                                 </div>
 
                             </Grid>
                             <Grid item xs={12} sm={8} md={6} lg={4}>
 
-                                <div className='port-card-2'>
+                                <div className='news-card'>
+                                    <Link href="https://mirror.xyz/0xb69d053fA14F0CEAD7ec9C3D3153EcFF235E7aCD/8HVX8540RQSqih-3gqMiyAaiH5KamjWxo_RTgsPTRFQ" underline ="none" target="_blank">
                                     <Box component="img" src="/images/Frage.svg" width="100%" className='shutter-img'/>
                                     <div className='shtrpadign'>
                                         <Typography variant="h4" gutterBottom className='Asset-text'>
@@ -73,6 +78,7 @@ export default function Investment() {
                                             March 10th, 2023
                                         </Typography>
                                     </div>
+                                    </Link>
                                 </div>
 
                             </Grid>

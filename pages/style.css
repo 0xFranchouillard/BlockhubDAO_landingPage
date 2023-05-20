@@ -1,9 +1,6 @@
 body {
-    background: #060606;
-    padding: 0px;
-    margin: 0px;
+    background: linear-gradient(180deg, #060606 0%, #141414 100%) !important;
 }
-
 @font-face {
     font-family: Inter-Bold ;
     src: url("../src/assets/font-family/Inter-Bold.ttf");
@@ -45,4 +42,50 @@ body {
     background-image: url("../public/images/vectors4.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.slicer {
+    position: absolute;
+    width: 7.42px;
+    height: 460.63px;
+    left: calc(50% - 7.42px/2 + 0.39px);
+    top: calc(50% - 460.63px/2 + 0.1px);
+
+    background: rgba(131, 131, 131, 0.32);
+    border: 0.39053px solid rgba(255, 255, 255, 0.32);
+    box-shadow: 0px 0px 6.24847px #6100FF, inset -0.39053px -0.781059px 1.56212px rgba(0, 0, 0, 0.25), inset 0.39053px 0.781059px 4.68636px rgba(255, 255, 255, 0.64);
+    backdrop-filter: blur(3.12424px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 19.5265px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+.Genius-text {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: PlusJakartaSans-Bold;
+    margin-top: 15%;
+    text-align: center;
+    background: radial-gradient(101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: -0.04em;
+}
+.Blockhub-text {
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%; /* or 24px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #8D8A93;
 }

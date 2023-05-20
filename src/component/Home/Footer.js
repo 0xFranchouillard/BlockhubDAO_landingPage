@@ -51,35 +51,25 @@ export default function Footer() {
                                 </Typography>
                                 <div className=' ftrlist '>
                                     <List>
-                                        <ListItem>
-                                            <Link legacyBehavior href={config.discord} target="_blank">
-                                                <a>
+                                        {/*<ListItem>
+                                            <a href={config.discord} target="_blank">
                                                     <Box component="img" src="/images/Discord.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
-                                        </ListItem>
+                                            </a>
+                                        </ListItem>*/}
                                         <ListItem>
-                                            <Link legacyBehavior href={config.twitter} target="_blank">
-                                                <a>
+                                            <a href={config.twitter} target="_blank">
                                                     <Box component="img" src="/images/Twitter.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                         <ListItem>
-                                            <Link legacyBehavior
-                                                  href={config.mirror}
-                                                  target="_blank">
-                                                <a>
+                                            <a href={config.mirror} target="_blank">
                                                     <Box component="img" src="/images/Mirror.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                         <ListItem>
-                                            <Link legacyBehavior href={config.github} target="_blank">
-                                                <a>
+                                            <a href={config.github} target="_blank">
                                                     <Box component="img" src="/images/Git.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                     </List>
                                 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Container, Grid, Typography} from '@mui/material';
+import {Box, Container, Grid, Typography, Link} from '@mui/material';
 import {HomeStyle} from './Style'
 
 
@@ -22,6 +22,7 @@ export default function Sickportfolio() {
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://shutter.network/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/Shutter.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
@@ -32,14 +33,14 @@ export default function Sickportfolio() {
                                         Apparently, it's about this "MEV" thing. We're not sure what it is, but it
                                         sounded cool
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
-                                <Box component="img" src="/images/cardshift.svg" width="100%" className='shutter-img'/>
+                                <Link href={'https://www.cardashift.com/'} underline="none" target="_blank">
+                                <Box component="img" src="/images/cardashift.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
                                         Cardashift
@@ -49,13 +50,14 @@ export default function Sickportfolio() {
                                         A launchpad on Cardano, or so they say. We were tipsy and misclicked, but hey,
                                         happy accidents, right? right ???
                                     </Typography>
-
-
                                 </div>
+                                </Link>
+
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://www.raremind.com/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/RareMind.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
@@ -66,13 +68,13 @@ export default function Sickportfolio() {
                                         Chess, or "échecs" in French, also means failure. As connoisseurs of the latter,
                                         it was our duty to invest in this gem.
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://www.hashup.it/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/hashup.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
@@ -83,13 +85,13 @@ export default function Sickportfolio() {
                                         Steam-As-A-Service, minus the banhammer. We've been booted off Steam for bot
                                         overload, so we figured a decentralized version couldn't hurt
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://www.kairos.loan/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/Kairos.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
@@ -100,78 +102,73 @@ export default function Sickportfolio() {
                                         Our admin is drowning in NFTs, and since there's no liquidity, they're stuck. At
                                         least they can get a loan before getting liquidated, thanks to Kairos.
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://www.protocol.style/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/stylepro.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
                                         STYLE Protocol
                                     </Typography>
-
                                     <Typography variant="h4" gutterBottom className='Apparently-text'>
                                         Making NFTs slightly more useful by teleporting them into other voids filled
                                         with empty people.
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://cvg.finance/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/Convergence.svg" width="100%"
                                      className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
                                         Convergence
                                     </Typography>
-
                                     <Typography variant="h4" gutterBottom className='Apparently-text'>
                                         We grasped about 10% of their pitch, but it sounded fancy. Fingers crossed they
                                         make us rich!
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://quantixnft.xyz/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/Quantix.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
                                         Quantix
                                     </Typography>
-
                                     <Typography variant="h4" gutterBottom className='Apparently-text'>
                                         NFTs, yet again. Another attempt to bring liquidity to them. We're starting to
                                         suspect one of our admin has too much sway in our decisions.
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
+                                <Link href={'https://www.entangle.fi/'} underline="none" target="_blank">
                                 <Box component="img" src="/images/Entangle.svg" width="100%" className='shutter-img'/>
                                 <div className='shtrpadign'>
                                     <Typography variant="h4" gutterBottom className='Network-text'>
                                         Entangle
                                     </Typography>
-
                                     <Typography variant="h4" gutterBottom className='Apparently-text'>
                                         Layer0, transforming everything into LSD, or something like that. We were sold
                                         on the trippy part, so here we are!
                                     </Typography>
-
-
                                 </div>
+                                </Link>
                             </div>
                         </Grid>
                     </Grid>

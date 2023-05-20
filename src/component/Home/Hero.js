@@ -26,9 +26,10 @@ export default function Hero() {
                                 </a>
                             </Link>
                             <ImageSlicer/>
+                            <Link href="https://hydnsec.com/" target="_blank">
                             <Box component="img" src="/images/partnership.svg" width="100%" my={3}/>
+                            </Link>
                         </Box>
-
                     </Grid>
                 </Grid>
             </Container>
