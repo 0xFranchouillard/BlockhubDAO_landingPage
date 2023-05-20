@@ -16,8 +16,7 @@ export default function Footer() {
                                 Get in touch
                             </Typography>
                             <Typography variant="h4" gutterBottom className='Apparently-text'>
-                                Are you a game-changing project looking for funding? Apply now to join our community of
-                                visionaries.
+                                Are you a game-changing project looking for funding? Contact us at contact@blockhubdao.com
                             </Typography>
                             <Box>
                                 <Link legacyBehavior href={config.mail}
