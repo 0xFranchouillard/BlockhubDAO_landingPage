@@ -6,11 +6,10 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <HomeStyle>
-            <div className='join-bg '>
+            <div className='join-bg'>
                 <Container>
                     <Grid container justifyContent="center">
                         <Grid xs={12} md={9} lg={6}>
-
                             <Typography variant="h4" gutterBottom className='Revolution'>
                                 Join the Blockhub Revolution
                             </Typography>
@@ -19,7 +18,7 @@ export default function Hero() {
                             </Typography>
                             <Link legacyBehavior href={config.mail}>
                                 <a>
-                                    <Box textAlign="center" paddingBottom={5} >
+                                    <Box textAlign="center" >
                                     <Button variant="contained" color="primary" className='geniusbtn'> Apply now </Button>
                                 </Box>
                                 </a>

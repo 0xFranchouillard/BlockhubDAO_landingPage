@@ -176,7 +176,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
         lineHeight: "21px",
     },
     '& .join-bg': {
-        //background: "radial-gradient(49.43% 50% at 50% 50%, #1F143A 0%, #141414 100%)",
+        background: "radial-gradient(49.43% 50% at 50% 50%, #1F143A 0%, #141414 100%)",
         //background: 'linear-gradient(180deg, #060606 0%, #141414 100%);',
         padding: "40px",
     },
@@ -194,6 +194,10 @@ export const HomeStyle = styled('div')(({theme}) => ({
         fontFamily: "Inter-Medium",
         lineHeight: "24px",
         textAlign: "center",
+        letterSpacing: "-0.02em",
+        flex: "none",
+        order: 1,
+        flexGrow: 0,
     },
     '& .thesis': {
         color: "#FFFFFF",

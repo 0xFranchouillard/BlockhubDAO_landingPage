@@ -89,3 +89,17 @@ body {
     letter-spacing: -0.02em;
     color: #8D8A93;
 }
+.Revolution {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: PlusJakartaSans-Bold;
+    margin-top: 0%;
+    text-align: center;
+    background: radial-gradient(101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: -0.04em;
+}
