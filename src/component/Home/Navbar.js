@@ -17,7 +17,6 @@ export default function ButtonAppBar() {
                         <Toolbar>
                             <Grid container>
                                 <Grid item xs={5} sm={6}>
-
                                     <List className='nav-list-bg-rounded'>
                                         <Hidden mdDown>
                                             <ListItem>
@@ -56,55 +55,44 @@ export default function ButtonAppBar() {
                                             </ListItem>
                                         </Hidden>
                                     </List>
-
                                 </Grid>
                                 <Grid item xs={7} sm={6}>
                                     <div className='right-nav'>
                                         <List>
                                             <Hidden mdDown>
-                                                <ListItem>
-                                                    <Link legacyBehavior href={config.discord} target="_blank">
-                                                        <a>
+                                                {/*<ListItem>
+                                                    <a href={config.discord} target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Discord.svg"
                                                                  className='github'/>
-                                                        </a>
+                                                    </a>
                                                     </Link>
-                                                </ListItem>
+                                                </ListItem>*/}
                                                 <ListItem>
-                                                    <Link legacyBehavior href={config.twitter}
-                                                          target="_blank">
-                                                        <a>
+                                                    <a href={config.twitter} target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Twitter.svg"
                                                                  className='github'/>
-                                                        </a>
-                                                    </Link>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <Link legacyBehavior href={config.mirror}
-                                                          target="_blank">
-                                                        <a>
+                                                    <a href={config.mirror}
+                                                          target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Mirror.svg"
                                                                  className='github'/>
-                                                        </a>
-                                                    </Link>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <Link legacyBehavior href={config.github}
-                                                          target="_blank">
-                                                        <a>
+                                                    <a href={config.github}
+                                                          target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Git.svg"
                                                                  className='github'/>
-                                                        </a>
-                                                    </Link>
+                                                    </a>
                                                 </ListItem>
                                             </Hidden>
                                             <ListItem>
-                                                <Link legacyBehavior href={config.mail}>
-                                                    <a>
+                                                <a href={config.mail}>
                                                         <Button variant="contained" color="primary" className='aplybtn'> Apply
                                                             now </Button>
-                                                    </a>
-                                                </Link>
+                                                </a>
                                             </ListItem>
                                             <Hidden mdUp>
                                                 <ListItem>

@@ -77,7 +77,7 @@ export default function TemporaryDrawer() {
                                         </ListItemButton>
 
                                     </ListItem>
-                                    <ListItem>
+                                    {/*<ListItem>
                                         <Link legacyBehavior href={config.discord}
                                               target="_blank">
                                             <a>
@@ -85,34 +85,34 @@ export default function TemporaryDrawer() {
                                                      className='github'/>
                                             </a>
                                         </Link>
-                                    </ListItem>
+                                    </ListItem>*/}
                                     <ListItem>
-                                        <Link legacyBehavior href={config.twitter}
+                                        <a href={config.twitter}
                                               target="_blank">
                                             <a>
                                                 <Box component="img" src="/images/Twitter.svg"
                                                      className='github'/>
                                             </a>
-                                        </Link>
+                                        </a>
                                     </ListItem>
                                     <ListItem>
-                                    <Link legacyBehavior
+                                    <a
                                           href={config.mirror}
                                           target="_blank">
                                         <a>
                                             <Box component="img" src="/images/Mirror.svg"
                                                  className='github'/>
                                         </a>
-                                    </Link>
+                                    </a>
                                     </ListItem>
                                     <ListItem>
-                                        <Link legacyBehavior href={config.github}
+                                        <a href={config.github}
                                               target="_blank">
                                             <a>
                                                 <Box component="img" src="/images/Git.svg"
                                                      className='github'/>
                                             </a>
-                                        </Link>
+                                        </a>
                                     </ListItem>
 
 

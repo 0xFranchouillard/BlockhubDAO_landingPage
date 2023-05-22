@@ -16,18 +16,14 @@ export const HomeStyle = styled('div')(({theme}) => ({
             padding: "unset",
 
         },
-
-
         '& .MuiList-root': {
             display: "inline-flex",
             marginTop: "10px",
-
         },
         '& .MuiListItem-root': {
             paddingLeft: "10px !important",
             paddingRight: "10px !important",
         },
-
         // '& .MuiListItem-root':{
         //     paddingRight:"unset",
         // },
@@ -38,7 +34,6 @@ export const HomeStyle = styled('div')(({theme}) => ({
             background: "rgba(22, 22, 22, 0.8)",
             borderRadius: "40px",
         },
-
         '& .right-nav': {
             textAlign: "end",
             '& .MuiList-root': {
@@ -54,22 +49,30 @@ export const HomeStyle = styled('div')(({theme}) => ({
         border: "1px solid rgba(255, 255, 255, 0.08)",
         borderRadius: "100px",
         height: "58px",
+        padding: "12px 32px 12px 24px",
+        gap: "0px",
     },
+    '& .right-nav': {
+        gap: "8px"
+    },
+
     '& .logo': {
         width: "34px",
         height: "34px",
     },
     '& .MuiButton-containedPrimary': {
         cursor: "pointer",
-        background: "linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%), radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)",
+        background: "linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)" +
+            ", radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)",
+        backgroundBlendMode: "overlay, normal",
         border: "1px solid rgba(255, 255, 255, 0.16)",
         boxShadow: "inset 0px -2px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 2px rgba(255, 255, 255, 0.4)",
         borderRadius: "32px",
+        backdropFilter: "blur(16px)",
     },
     '& .aplybtn': {
         height: "48px",
         width: "134px",
-
     },
 
     '& .nav-btn': {
@@ -88,19 +91,30 @@ export const HomeStyle = styled('div')(({theme}) => ({
         },
     },
     '& .Genius-text': {
-        color: "#FFFFFF !important",
+/*        color: "#FFFFFF !important",
         fontSize: "64px",
         fontFamily: "PlusJakartaSans-Bold",
-        marginTop: "234px",
+        marginTop: "15%",
+        textAlign: "center",*/
+        /*color: "#FFFFFF !important",
+        fontSize: "64px",
+        fontFamily: "PlusJakartaSans-Bold",
+        marginTop: "15%",
         textAlign: "center",
-
+        radialGradient: "101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 100%",
+        webkitBackgroundClip: "text",
+        webkitTextFillColor: "transparent",
+        backgroundClip: "text",
+        fontWeight: "700",
+        LineWeight: "90px",
+        letterSpacing: "-0.04em",*/
     },
     '& .Blockhub-text': {
-        color: "#FFFFFF !important",
+        /*color: "#FFFFFF !important",
         fontSize: "16px",
         fontFamily: "Inter-Medium",
         textAlign: "center",
-        lineHeight: "24px",
+        lineHeight: "24px",*/
     },
     '& .geniusbtn': {
         width: "166px",
@@ -121,12 +135,21 @@ export const HomeStyle = styled('div')(({theme}) => ({
         lineHeight: "24px",
     },
     '& .port-card': {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        padding: "0px",
+        width: "500px",
+        height: "384px",
         background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
-        border: " 1px solid rgba(255, 255, 255, 0.16)",
+        border: "1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
         borderRadius: "32px",
+        flex: "none",
+        order: "0",
+        flexGrow: "1"
     },
-    '& .port-card-2': {
+    '& .news-card': {
         background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
@@ -154,6 +177,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
     },
     '& .join-bg': {
         background: "radial-gradient(49.43% 50% at 50% 50%, #1F143A 0%, #141414 100%)",
+        //background: 'linear-gradient(180deg, #060606 0%, #141414 100%);',
         padding: "40px",
     },
     '& .Revolution': {
@@ -170,6 +194,10 @@ export const HomeStyle = styled('div')(({theme}) => ({
         fontFamily: "Inter-Medium",
         lineHeight: "24px",
         textAlign: "center",
+        letterSpacing: "-0.02em",
+        flex: "none",
+        order: 1,
+        flexGrow: 0,
     },
     '& .thesis': {
         color: "#FFFFFF",
@@ -285,9 +313,9 @@ export const HomeStyle = styled('div')(({theme}) => ({
 
     [theme.breakpoints.down('lg')]: {
         '& .Genius-text': {
-            fontSize: "50px",
+            //fontSize: "50px",
         },
-        '& .port-card-2': {
+        '& .news-card': {
             height: "618px",
         },
 
@@ -298,7 +326,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
 
     [theme.breakpoints.down('md')]: {
         '& .Genius-text': {
-            fontSize: "40px",
+            //fontSize: "40px",
         },
         '& .nav-list-bg-rounded': {
             background: "unset",
@@ -359,11 +387,8 @@ export const HomeStyle = styled('div')(({theme}) => ({
 
         },
         '& .Genius-text': {
-            marginTop: "200px",
+            //marginTop: "200px",
 
-        },
-
-    },
-
-
+        }
+    }
 }));

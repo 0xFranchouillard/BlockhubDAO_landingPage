@@ -19,7 +19,9 @@
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-compare-slider": "^2.2.0",
+    "react-dom": "latest",
+    "web3": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "latest",

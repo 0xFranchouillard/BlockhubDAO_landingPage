@@ -16,8 +16,7 @@ export default function Footer() {
                                 Get in touch
                             </Typography>
                             <Typography variant="h4" gutterBottom className='Apparently-text'>
-                                Are you a game-changing project looking for funding? Apply now to join our community of
-                                visionaries.
+                                Are you a game-changing project looking for funding? Contact us at contact@blockhubdao.com
                             </Typography>
                             <Box>
                                 <Link legacyBehavior href={config.mail}
@@ -51,35 +50,25 @@ export default function Footer() {
                                 </Typography>
                                 <div className=' ftrlist '>
                                     <List>
-                                        <ListItem>
-                                            <Link legacyBehavior href={config.discord} target="_blank">
-                                                <a>
+                                        {/*<ListItem>
+                                            <a href={config.discord} target="_blank">
                                                     <Box component="img" src="/images/Discord.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
-                                        </ListItem>
+                                            </a>
+                                        </ListItem>*/}
                                         <ListItem>
-                                            <Link legacyBehavior href={config.twitter} target="_blank">
-                                                <a>
+                                            <a href={config.twitter} target="_blank">
                                                     <Box component="img" src="/images/Twitter.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                         <ListItem>
-                                            <Link legacyBehavior
-                                                  href={config.mirror}
-                                                  target="_blank">
-                                                <a>
+                                            <a href={config.mirror} target="_blank">
                                                     <Box component="img" src="/images/Mirror.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                         <ListItem>
-                                            <Link legacyBehavior href={config.github} target="_blank">
-                                                <a>
+                                            <a href={config.github} target="_blank">
                                                     <Box component="img" src="/images/Git.svg" className='ftricon'/>
-                                                </a>
-                                            </Link>
+                                            </a>
                                         </ListItem>
                                     </List>
                                 </div>
