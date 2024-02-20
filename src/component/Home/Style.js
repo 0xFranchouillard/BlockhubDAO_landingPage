@@ -27,18 +27,19 @@ export const HomeStyle = styled('div')(({theme}) => ({
         // '& .MuiListItem-root':{
         //     paddingRight:"unset",
         // },
-        '& .github': {
+        '& .navButton': {
             height: "48px",
             width: "48px",
             cursor: "pointer",
             background: "rgba(22, 22, 22, 0.8)",
-            borderRadius: "40px",
+            borderRadius: "50%",
         },
         '& .right-nav': {
             textAlign: "end",
             '& .MuiList-root': {
                 marginTop: "unset",
             },
+            // gap: '8px'
         },
         '& .menu-setting': {
             color: "#5911d9"
@@ -52,23 +53,19 @@ export const HomeStyle = styled('div')(({theme}) => ({
         padding: "12px 32px 12px 24px",
         gap: "0px",
     },
-    '& .right-nav': {
-        gap: "8px"
-    },
+
 
     '& .logo': {
         width: "34px",
         height: "34px",
     },
-    '& .MuiButton-containedPrimary': {
-        cursor: "pointer",
-        background: "linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)" +
-            ", radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)",
-        backgroundBlendMode: "overlay, normal",
-        border: "1px solid rgba(255, 255, 255, 0.16)",
-        boxShadow: "inset 0px -2px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 2px rgba(255, 255, 255, 0.4)",
-        borderRadius: "32px",
-        backdropFilter: "blur(16px)",
+    "& .MuiButton-containedPrimary" : {
+        cursor: 'pointer',
+        background: 'linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)' + ' ,radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)',
+        border: '1px solid rgba(255, 255, 255, 0.16)',
+        boxShadow: 'inset 0px -2px 2px rgba(0, 0, 0, 0.25)' +' inset 0px 1px 2px rgba(255, 255, 255, 0.4)',
+        borderRadius:' 32px',
+        backdropFilter:' blur(16px)',
     },
     '& .aplybtn': {
         height: "48px",
@@ -80,6 +77,9 @@ export const HomeStyle = styled('div')(({theme}) => ({
         fontSize: "16px",
         fontFamily: "Inter-Medium",
         textTransform: "capitalize",
+        '&:hover' : {
+            color: "#8F75ED !important"
+        }
     },
     '& .mob-draw': {
         '& .MuiList-root': {
@@ -117,10 +117,21 @@ export const HomeStyle = styled('div')(({theme}) => ({
         lineHeight: "24px",*/
     },
     '& .geniusbtn': {
-        width: "166px",
-        height: "50px",
+        position: 'relative',
+        overflow: 'hidden',
         marginTop: "20px",
         marginBottom: "20px",
+        width: "166px",
+        height: "50px",
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
 
     '& .portfolio-text': {
@@ -256,7 +267,6 @@ export const HomeStyle = styled('div')(({theme}) => ({
     },
 
     '& .colapse-bg': {
-        background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
         borderRadius: "24px",
@@ -381,10 +391,22 @@ export const HomeStyle = styled('div')(({theme}) => ({
             width: "91%",
             marginTop: "10px",
         },
-        '& .aplybtn': {
-            width: "116px",
-            fontSize: "12px",
-
+        '& .geniusbtn': {
+            position: 'relative',
+            overflow: 'hidden',
+            marginTop: "20px",
+            marginBottom: "20px",
+            width: "166px",
+            height: "50px",
+            '& img':{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                pointerEvents: 'none',
+                zIndex: -1, /* Places the SVG behind the button text */
+            }
         },
         '& .Genius-text': {
             //marginTop: "200px",

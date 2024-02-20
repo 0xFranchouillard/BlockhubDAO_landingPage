@@ -42,6 +42,19 @@ body {
     background-image: url("../public/images/vectors4.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+.vector5-faq {
+    background-image: url("../public/images/vectr5.svg");
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #6100FF; */
+}
+.vectors4-hero {
+    background-image: url("../public/images/vectors4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .slicer {
     position: absolute;
@@ -103,3 +116,4 @@ body {
     line-height: 90px;
     letter-spacing: -0.04em;
 }
+

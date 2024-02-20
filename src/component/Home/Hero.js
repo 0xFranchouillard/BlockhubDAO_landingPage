@@ -11,18 +11,22 @@ export default function Hero() {
                 <Typography variant="h4" gutterBottom className="Genius-text">
                     Where Genius and Memes Collide
                 </Typography>
-                <Grid container justifyContent="center">
-                    <Grid md={9} lg={8}>
+                <Grid container justifyContent="center" >
+                    <Grid md={10} lg={9}>
                         <Typography variant="h3" gutterBottom className='Blockhub-text'>
                             Welcome to Blockhub DAO, your go-to VC DAO for Web 3.0 investments and meme mastery! We're a
                             tight-knit crew of blockchain buffs with a passion for memes, trolling, and everything that
                             makes internet delightfully quirky.
                         </Typography>
-                        <Box textAlign="center">
+                        <Box textAlign="center" >
                             <Link legacyBehavior href={config.mail}>
-                                <a>
-                                    <Button variant="contained" color="primary" className='geniusbtn'> Apply
-                                        now </Button>
+                                <a >
+                                    <Button variant="contained" color="primary" className='geniusbtn'> 
+                                            <img src="/images/button.svg "/>                             
+                                    Apply
+                                        now 
+                                        
+                                        </Button>
                                 </a>
                             </Link>
                             <ImageSlicer/>
@@ -32,7 +36,8 @@ export default function Hero() {
                         </Box>
                     </Grid>
                 </Grid>
-            </Container>
+            </Container>    
+
         </HomeStyle>
     )
 }

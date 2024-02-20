@@ -14,15 +14,17 @@ export default function Investment() {
     });
 
     return (
-        <HomeStyle>
-            <Box py={5}>
-                <Container>
+        <HomeStyle  >
+            <Box paddingBottom={30} paddingTop={10} className='vector5-faq'>
+                <Container >
                     <Typography variant="h4" gutterBottom className='thesis' id='faq'>
                         FAQ
                     </Typography>
-                    <Box my={5}>
+                    <Box my={5} >
                         <Grid container justifyContent="center">
                             <Grid item xs={11} sm={10} md={8}>
+
+
 
                                 <div className='colapse-bg'>
                                     <Button variant="contained" onClick={() => {

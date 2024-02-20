@@ -60,38 +60,41 @@ export default function ButtonAppBar() {
                                     <div className='right-nav'>
                                         <List>
                                             <Hidden mdDown>
-                                                {/*<ListItem>
+                                                <ListItem>
                                                     <a href={config.discord} target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Discord.svg"
-                                                                 className='github'/>
+                                                                 className='navButton'/>
                                                     </a>
-                                                    </Link>
-                                                </ListItem>*/}
+                                                </ListItem>
                                                 <ListItem>
                                                     <a href={config.twitter} target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Twitter.svg"
-                                                                 className='github'/>
+                                                                 className='navButton'/>
                                                     </a>
                                                 </ListItem>
                                                 <ListItem>
                                                     <a href={config.mirror}
                                                           target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Mirror.svg"
-                                                                 className='github'/>
+                                                                 className='navButton'/>
                                                     </a>
                                                 </ListItem>
                                                 <ListItem>
                                                     <a href={config.github}
                                                           target="_blank" rel="noopener noreferrer">
                                                             <Box component="img" src="/images/Git.svg"
-                                                                 className='github'/>
+                                                                 className='navButton'/>
                                                     </a>
                                                 </ListItem>
                                             </Hidden>
                                             <ListItem>
                                                 <a href={config.mail}>
-                                                        <Button variant="contained" color="primary" className='aplybtn'> Apply
-                                                            now </Button>
+                                                        <Button variant="contained" color="primary" className='geniusbtn'> 
+                                            <img src="/images/button.svg "/>                             
+                                    Apply
+                                        now 
+                                        
+                                        </Button>
                                                 </a>
                                             </ListItem>
                                             <Hidden mdUp>
