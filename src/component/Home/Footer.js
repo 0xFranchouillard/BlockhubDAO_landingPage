@@ -26,7 +26,9 @@ export default function Footer() {
                                 <Link legacyBehavior href={config.mail}
                                       target="_blank">
                                     <a>
-                                        <Button variant="contained" color="primary" className='ftraply'> Apply now </Button>
+                                        <Button variant="contained" color="primary" className='aplybtn'>
+                                            
+                                             <img src="/images/button.svg "/>    Apply now </Button>
                                     </a>
                                 </Link>
 

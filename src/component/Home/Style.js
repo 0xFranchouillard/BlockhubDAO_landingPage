@@ -6,19 +6,16 @@ export const HomeStyle = styled('div')(({theme}) => ({
         width: "100%",
         top: "0px",
         zIndex: "10",
+        margin: 'auto'
     },
     '& .Appbar-setting': {
         background: "transparent",
         boxShadow: "none",
         marginTop: "40px",
         borderRadius: "30px",
-        '& .MuiToolbar-root': {
-            padding: "unset",
 
-        },
         '& .MuiList-root': {
             display: "inline-flex",
-            marginTop: "10px",
         },
         '& .MuiListItem-root': {
             paddingLeft: "10px !important",
@@ -68,9 +65,22 @@ export const HomeStyle = styled('div')(({theme}) => ({
         backdropFilter:' blur(16px)',
     },
     '& .aplybtn': {
-        height: "48px",
+        position: 'relative',
+        overflow: 'hidden',
+        
         width: "134px",
+        height: "48px",
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
+  
 
     '& .nav-btn': {
         color: "#B7B5BA !important",
@@ -288,10 +298,20 @@ export const HomeStyle = styled('div')(({theme}) => ({
     '& .ftraply': {
         fontSize: "14px",
         width: "130px",
-        marginTop: "15px",
+        position: 'relative',
+        overflow: 'hidden',
+        
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
-
-
+   
     '& .copy-text': {
         color: "#B7B5BA",
         fontSize: "12px",

@@ -117,3 +117,8 @@ body {
     letter-spacing: -0.04em;
 }
 
+.aNavbar {
+    display: flex;
+    align-items: center;
+    
+}

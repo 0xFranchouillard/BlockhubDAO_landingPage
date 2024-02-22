@@ -16,14 +16,21 @@ export default function ButtonAppBar() {
                     <AppBar position="static" className='Appbar-setting'>
                         <Toolbar>
                             <Grid container>
-                                <Grid item xs={5} sm={6}>
+                                <Grid item xs={5} sm={6}
+                                
+                                style={{
+                                    display: "flex", 
+                                    alignItems: "center"
+                                }}
+                                                    
+                                >
                                     <List className='nav-list-bg-rounded'>
                                         <Hidden mdDown>
                                             <ListItem>
                                                 <Link legacyBehavior href="#">
                                                     <a>
                                                         <Box component="img" alt='' src="/images/logo.png"
-                                                             className='logo'/>
+                                                             className='logo aNavbar'/>
                                                     </a>
                                                 </Link>
                                             </ListItem>
@@ -61,40 +68,43 @@ export default function ButtonAppBar() {
                                         <List>
                                             <Hidden mdDown>
                                                 <ListItem>
-                                                    <a href={config.discord} target="_blank" rel="noopener noreferrer">
+                                                    <a href={config.discord} target="_blank" rel="noopener noreferrer" className='aNavbar'>
                                                             <Box component="img" src="/images/Discord.svg"
                                                                  className='navButton'/>
                                                     </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <a href={config.twitter} target="_blank" rel="noopener noreferrer">
+                                                    <a href={config.twitter} target="_blank" rel="noopener noreferrer" className='aNavbar'>
                                                             <Box component="img" src="/images/Twitter.svg"
                                                                  className='navButton'/>
                                                     </a>
                                                 </ListItem>
-                                                <ListItem>
+                                                <ListItem >
                                                     <a href={config.mirror}
-                                                          target="_blank" rel="noopener noreferrer">
+                                                          target="_blank" rel="noopener noreferrer" className='aNavbar'>
                                                             <Box component="img" src="/images/Mirror.svg"
                                                                  className='navButton'/>
                                                     </a>
                                                 </ListItem>
-                                                <ListItem>
+                                                <ListItem
+                                                
+                                                >
                                                     <a href={config.github}
-                                                          target="_blank" rel="noopener noreferrer">
+                                                          target="_blank" rel="noopener noreferrer"
+                                                          className='aNavbar'
+                                                          >
                                                             <Box component="img" src="/images/Git.svg"
-                                                                 className='navButton'/>
+                                                                 className='navButton'
+                                                                 />
                                                     </a>
                                                 </ListItem>
                                             </Hidden>
                                             <ListItem>
                                                 <a href={config.mail}>
-                                                        <Button variant="contained" color="primary" className='geniusbtn'> 
-                                            <img src="/images/button.svg "/>                             
-                                    Apply
-                                        now 
-                                        
-                                        </Button>
+                                                        <Button variant="contained" color="primary" className='aplybtn'> 
+                                                        <img src="/images/button.svg "/>   
+                                                        Apply
+                                                            now </Button>
                                                 </a>
                                             </ListItem>
                                             <Hidden mdUp>
