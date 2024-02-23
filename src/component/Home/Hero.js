@@ -14,9 +14,8 @@ export default function Hero() {
                 <Grid container justifyContent="center" >
                     <Grid md={10} lg={9}>
                         <Typography variant="h3" gutterBottom className='Blockhub-text'>
-                            Welcome to Blockhub DAO, your go-to VC DAO for Web 3.0 investments and meme mastery! We're a
-                            tight-knit crew of blockchain buffs with a passion for memes, trolling, and everything that
-                            makes internet delightfully quirky.
+                            Welcome to Blockhub DAO - a powerhouse of 60+ chosen chads, primed to stir up another storm in the next cycle!
+                            We aren't just your average VC DAO, we-re an ecclectic mix of Web 3.0 investment gurus, meme magicians, and masterful trolls
                         </Typography>
                         <Box textAlign="center" >
                             <Link legacyBehavior href={config.mail}>

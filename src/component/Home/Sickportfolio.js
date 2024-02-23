@@ -12,10 +12,10 @@ export default function Sickportfolio() {
                 </Typography>
 
                 <Typography variant="h5" gutterBottom className='meme'>
-                    We're not your run-of-the-mill venture capital DAO; we're the meme-fueled maestros of the blockchain
-                    universe. Our portfolio stands as a testament to our savvy expertise and our ambitious vision for
-                    the future. We handpick the most promising projects, always on the hunt for that next game-changer.
-                    Scope out our meme-folio and discover why we're the undisputed top dogs in the crypto playground.
+                    We're not your run-of-the-mill venture capital DAO; we fuel the next wave of Web 3.0 evolution.
+                    Our portfolio stands as a testament to our savvy expertise and our ambitious vision for the future.
+                    We handpick the most promising projects, always on the hunt for that next game-changer.
+                    Scope out our portfolio and discover why we're the undisputed top dogs in the crypto playground.
                 </Typography>
                 <Box my={5}>
                     {/* card section started */}
