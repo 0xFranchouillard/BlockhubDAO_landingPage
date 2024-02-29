@@ -56,6 +56,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+    .div-element{
+        background: #141414,
+    }
 .slicer {
     position: absolute;
     width: 7.42px;

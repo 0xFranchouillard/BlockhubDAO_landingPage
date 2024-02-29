@@ -6,7 +6,7 @@ import Link from "next/link";
 import ImageSlicer from "./ImageSlicer";
 export default function Hero() {
     return (
-        <HomeStyle>
+        <HomeStyle className='div-element'>
             <Container>
                 <Typography variant="h4" gutterBottom className="Genius-text">
                     Where Genius and Memes Collide
