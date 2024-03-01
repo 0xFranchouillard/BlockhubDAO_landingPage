@@ -41,6 +41,12 @@ body {
         padding: unset;
     }
 }
+
+@media screen and (max-width: 960) {
+    .hero {
+       padding-top: 20%;
+    }
+}
 .hero{
     padding-top: 10%;
 }

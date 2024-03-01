@@ -18,7 +18,7 @@ export default function Sickportfolio() {
                     Scope out our portfolio and discover why we're the undisputed top dogs in the crypto playground.
                 </Typography>
                 <Box my={5}>
-                    {/* card section started */}
+                    
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
