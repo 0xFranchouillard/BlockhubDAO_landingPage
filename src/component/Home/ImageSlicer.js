@@ -35,6 +35,7 @@ export default function ImageSlicer() {
                                     transform: 'translateX(-50%)',
                                     maxWidth: 372, 
                                     zIndex: 2, 
+                                    filter: 'grayscale(100%)'
                                 }}
                             />
                        
