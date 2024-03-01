@@ -16,6 +16,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
 
         '& .MuiList-root': {
             display: "inline-flex",
+            
         },
         '& .MuiListItem-root': {
             paddingLeft: "10px !important",

@@ -5,7 +5,7 @@ import {HomeStyle} from './Style'
 
 export default function Sickportfolio() {
     return (
-        <HomeStyle>
+        <HomeStyle className='div-element'>
             <Container>
                 <Typography variant="h4" gutterBottom className='portfolio-text' id='portfolio'>
                     Our sick portfolio
@@ -17,9 +17,9 @@ export default function Sickportfolio() {
                     We handpick the most promising projects, always on the hunt for that next game-changer.
                     Scope out our portfolio and discover why we're the undisputed top dogs in the crypto playground.
                 </Typography>
-                <Box my={5}>
+                <Box my={5} className='marginPortFolio'>
                     
-                    <Grid container spacing={4}>
+                    <Grid container spacing={4} >
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
                                 <Link href={'https://shutter.network/'} underline="none" target="_blank">

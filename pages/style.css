@@ -62,13 +62,19 @@ body {
     background-size: auto, auto;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: #6100FF; */
 }
 .vectors4-hero {
-    background-image: url("../public/images/vectors4.png");
+    background-image: url("../public/images/vector6.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
+
+
+
+
+
+
     .div-element{
         background: #141414;
         
@@ -132,7 +138,10 @@ body {
     line-height: 90px;
     letter-spacing: -0.04em;
 }
-
+.marginPortFolio{
+    margin-bottom: 0 !important;
+    padding-bottom: 40px;
+}
 .aNavbar {
     display: flex;
     align-items: center;

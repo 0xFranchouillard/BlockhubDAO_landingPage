@@ -14,7 +14,7 @@ export default function Investment() {
     });
 
     return (
-        <HomeStyle  >
+        <HomeStyle className='div-element' >
             <Box paddingBottom={30} paddingTop={10} className='vector5-faq'>
                 <Container >
                     <Typography variant="h4" gutterBottom className='thesis' id='faq'>

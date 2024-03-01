@@ -7,7 +7,8 @@ import ImageSlicer from "./ImageSlicer";
 export default function Hero() {
     return (
         <HomeStyle className='div-element hero'>
-            <Container>
+            <Box   className='vectors4-hero'>
+            <Container >
                 <Typography variant="h4" gutterBottom className="Genius-text">
                     Where Genius and Memes Collide
                 </Typography>
@@ -36,7 +37,7 @@ export default function Hero() {
                     </Grid>
                 </Grid>
             </Container>    
-
+            </Box>
         </HomeStyle>
     )
 }
