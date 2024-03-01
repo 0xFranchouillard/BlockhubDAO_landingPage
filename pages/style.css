@@ -1,5 +1,9 @@
 body {
     background: linear-gradient(180deg, #060606 0%, #141414 100%) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 @font-face {
     font-family: Inter-Bold ;
@@ -37,6 +41,9 @@ body {
         padding: unset;
     }
 }
+.hero{
+    padding-top: 10%;
+}
 
 .vectors4-investment {
     background-image: url("../public/images/vectors4.png");
@@ -57,7 +64,8 @@ body {
     background-repeat: no-repeat;
 }
     .div-element{
-        background: #141414,
+        background: #141414;
+        
     }
 .slicer {
     position: absolute;
@@ -85,7 +93,6 @@ body {
     color: #FFFFFF;
     font-size: 64px;
     font-family: PlusJakartaSans-Bold;
-    margin-top: 15%;
     text-align: center;
     background: radial-gradient(101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 60%);
     -webkit-background-clip: text;

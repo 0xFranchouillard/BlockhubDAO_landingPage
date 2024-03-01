@@ -6,7 +6,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
         width: "100%",
         top: "0px",
         zIndex: "10",
-        margin: 'auto'
+        height: 'auto',
     },
     '& .Appbar-setting': {
         background: "transparent",
@@ -100,25 +100,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             color: "#B7B5BA !important",
         },
     },
-    '& .Genius-text': {
-/*        color: "#FFFFFF !important",
-        fontSize: "64px",
-        fontFamily: "PlusJakartaSans-Bold",
-        marginTop: "15%",
-        textAlign: "center",*/
-        /*color: "#FFFFFF !important",
-        fontSize: "64px",
-        fontFamily: "PlusJakartaSans-Bold",
-        marginTop: "15%",
-        textAlign: "center",
-        radialGradient: "101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 100%",
-        webkitBackgroundClip: "text",
-        webkitTextFillColor: "transparent",
-        backgroundClip: "text",
-        fontWeight: "700",
-        LineWeight: "90px",
-        letterSpacing: "-0.04em",*/
-    },
+    
     '& .Blockhub-text': {
         /*color: "#FFFFFF !important",
         fontSize: "16px",

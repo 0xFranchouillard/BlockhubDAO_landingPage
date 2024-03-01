@@ -10,13 +10,14 @@ import Footer from './Footer'
 import Head from "next/head";
 export default function Index() {
     return (
-        <div className='div-element'>
+        <div className='div-element-test'>
             <Head>
             <title>Blockhub DAO</title>
             </Head>
             <meta name='description' content='Blockhub DAO is a VC DAO for Web 3.0 investments and meme mastery'/>
             <meta/>
             <Navbar />
+
             <Hero />
             <Sickportfolio/>
             <Join/>
