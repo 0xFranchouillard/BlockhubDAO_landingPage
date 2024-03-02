@@ -5,7 +5,7 @@ export default function ImageSlicer() {
     const [sliderPosition, setSliderPosition] = useState(50);
 
     return (
-        <div style={{ width: '100%', height: '100%' }}>
+        <div style={{ width: '100%', height: '100%', paddingTop: '20px' }}>
             <ReactCompareSlider
                 boundsPadding={0}
                 handle={
@@ -33,7 +33,7 @@ export default function ImageSlicer() {
                                     bottom: 0,
                                     left: '50%',
                                     transform: 'translateX(-50%)',
-                                    maxWidth: 372, 
+                                    maxWidth: '50%', 
                                     zIndex: 2, 
                                     filter: 'grayscale(100%)'
                                 }}
@@ -42,7 +42,18 @@ export default function ImageSlicer() {
                         </div>
                     </>
                 }
-                itemTwo={<ReactCompareSliderImage src="/images/PepePurple.png" alt="Image two" />}
+                itemTwo={
+                <>
+                        <div style={{ position: 'relative', height: '100%', textAlign: 'center' }}>
+                <img
+                                src="/images/PepePurple.png"
+                                alt="Image two"
+                                style={{ width: '100%' }}
+                            />
+                </div>
+                </>
+                
+                }
                 position={sliderPosition}
                 portrait={false}
                 onlyHandleDraggable={false}
@@ -56,18 +67,17 @@ export default function ImageSlicer() {
             <div
                                 style={{
                                     position: 'absolute',
-                                    top: '90%', 
                                     left: '50%', 
                                     transform: 'translate(-50%, -50%)',
-                                    width: '60%',
-                                    height: '60%', 
+                                    width: '70%',
+                                    height: '70%', 
                                     borderRadius: '50%',
                                     background: 'linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%)',
+
                                     opacity: 0.4,
                                     filter: 'blur(100px)',
                                     zIndex: 1,
                                     pointerEvents: 'none', 
-                                    
                                 }}
                             />
         </div>

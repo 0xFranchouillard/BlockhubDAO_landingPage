@@ -48,7 +48,11 @@ body {
     }
 }
 .hero{
-    padding-top: 10%;
+    padding-top:10%;
+    top:0;
+}
+.internal-hero{
+    padding-top: 5%;
 }
 
 .vectors4-investment {
@@ -67,7 +71,7 @@ body {
     background-image: url("../public/images/vector6.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 

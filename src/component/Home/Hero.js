@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <HomeStyle className='div-element hero'>
             <Box   className='vectors4-hero'>
-            <Container >
+            <Container className='internal-hero'>
                 <Typography variant="h4" gutterBottom className="Genius-text">
                     Where Genius and Memes Collide
                 </Typography>
@@ -31,10 +31,11 @@ export default function Hero() {
                             </Link>
                             <ImageSlicer/>
                             <Link href="https://hydnsec.com/" target="_blank">
-                            <Box component="img" src="/images/partnership.svg" width="100%" my={3}/>
                             </Link>
                         </Box>
                     </Grid>
+                                                <Box component="img" src="/images/partnership.svg" width="100%" my={15}/>
+
                 </Grid>
             </Container>    
             </Box>
