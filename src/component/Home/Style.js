@@ -19,8 +19,8 @@ export const HomeStyle = styled('div')(({theme}) => ({
             
         },
         '& .MuiListItem-root': {
-            paddingLeft: "10px !important",
-            paddingRight: "10px !important",
+            paddingLeft: "5px !important",
+            paddingRight: "5px !important",
         },
         // '& .MuiListItem-root':{
         //     paddingRight:"unset",
