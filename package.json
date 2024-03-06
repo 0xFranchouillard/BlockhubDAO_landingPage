@@ -18,9 +18,10 @@
     "@mui/material": "latest",
     "next": "latest",
     "prop-types": "latest",
-    "react": "latest",
+    "react": "^18.2.0",
     "react-compare-slider": "^2.2.0",
-    "react-dom": "latest",
+    "react-dom": "^18.2.0",
+    "react-spring": "^9.7.3",
     "web3": "^1.10.0"
   },
   "devDependencies": {
