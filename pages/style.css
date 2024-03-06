@@ -42,18 +42,22 @@ body {
     }
 }
 
-@media screen and (max-width: 960) {
+
+@media screen and (max-width: 960px) {
     .hero {
-       padding-top: 20%;
+       padding-top: 20% !important
     }
 }
-.hero{
-    background-image: url("../public/images/vector6.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top:10%;
-     background: #141414;
+
+@media screen and (min-width: 960px) {
+    .hero{
+        background-image: url("../public/images/vector6.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top:10%;
+         background: #141414;
+    }
 }
 
 
