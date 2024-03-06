@@ -30,7 +30,7 @@ export default function ImageSlicer() {
                     backdropFilter: 'blur(3.12424px)',
                     borderRadius: '19.5265px',
                     cursor: 'pointer',
-                    zIndex: 50, // Assurez-vous que le z-index est suffisamment élevé pour être au-dessus de tous les autres éléments
+                    zIndex: 50, 
                 }}
             ></div>
         );
@@ -42,16 +42,14 @@ export default function ImageSlicer() {
                 style={{
                     position: 'absolute',
                     left: '50%',
-                    top: '100%',
+                    top: '110%',
                     transform: 'translate(-50%, -50%)',
-                    width: '95%',
-                    height: '95%',
+                    width: '100%',
+                    height: '100%',
                     borderRadius: '50%',
-                    background: 'radial-gradient(circle, #5227FF 0%, rgba(97, 0, 255, 0) 80%)',
+                    background: 'linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%)',
                     opacity: 0.4,
-                    filter: 'blur(100px)',
-                    zIndex: 1, // Ajustement du niveau de z-index
-                    pointerEvents: 'none',
+                    filter: 'blur(200px)',
                 }}
             />
             <ReactCompareSlider
@@ -79,7 +77,7 @@ export default function ImageSlicer() {
                                 left: '50%',
                                 transform: 'translateX(-50%)',
                                 maxWidth: '100%',
-                                zIndex: 2, // Ajustement du niveau de z-index
+                                zIndex: 2, 
                             }}
                         />
                     </div>
