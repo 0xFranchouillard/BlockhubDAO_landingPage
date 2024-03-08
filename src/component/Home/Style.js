@@ -1,17 +1,10 @@
 import {styled} from '@mui/material/styles';
 
 export const HomeStyle = styled('div')(({theme}) => ({
-    '& .nav-position': {
-        position: "fixed",
-        width: "100%",
-        top: "0px",
-        zIndex: "10",
-        height: 'auto',
-    },
+   
     '& .Appbar-setting': {
         background: "transparent",
         boxShadow: "none",
-        marginTop: "40px",
         borderRadius: "30px",
 
         '& .MuiList-root': {

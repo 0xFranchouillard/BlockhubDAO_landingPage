@@ -46,7 +46,9 @@ body {
 
 @media screen and (max-width: 960px) {
     .hero {
-       padding-top: 20% !important
+       padding-top: 20% !important;
+       background: #141414;
+
     }
 }
 
@@ -206,3 +208,64 @@ body {
     height: 500px; /* vous pouvez ajuster la hauteur en fonction de vos besoins */
     overflow: hidden;
   }
+
+
+
+  @media screen and (min-width: 960px) {
+    .elipse-hero {
+        position: absolute;
+        left: 50%;
+        top: 110%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%);
+        opacity: 0.4;
+        filter: blur(200px);
+    }
+
+    .footer-border {
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-position {
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 10;
+        height: auto;
+       }
+  }
+  @media screen and (max-width: 960px) {
+    .elipse-hero {
+        position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%);
+    opacity: 1;
+    filter: blur(177px);
+    }
+
+    .footer-border {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-position  {
+        position: static ;
+        width: 100%;
+        top: 0px;
+        z-index: 10;
+        height: auto;
+        background: #141414;
+
+    }
+  }
+
+
+
+ 

@@ -38,19 +38,8 @@ export default function ImageSlicer() {
 
     return (
         <div style={{ width: '100%', height: '100%', paddingTop: '20px'}}>
-             <div
-                style={{
-                    position: 'absolute',
-                    left: '50%',
-                    top: '110%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '50%',
-                    background: 'linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%)',
-                    opacity: 0.4,
-                    filter: 'blur(200px)',
-                }}
+             <div className='elipse-hero'
+          
             />
             <ReactCompareSlider
                 handle={<CustomHandle />}

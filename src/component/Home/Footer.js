@@ -44,8 +44,8 @@ export default function Footer() {
                             </Grid>
                         </Hidden>
                         <Grid item xs={12} sm={4} md={4} paddingLeft={3}
+                        className='footer-border'
                         style={{ display: "flex", justifyContent: "flex-start", flexDirection: 'column',
-                        borderLeft: '1px solid rgba(255, 255, 255, 0.08)',
                     
                     }}
                         
