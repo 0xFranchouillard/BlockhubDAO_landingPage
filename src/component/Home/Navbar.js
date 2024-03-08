@@ -193,17 +193,24 @@ export default function ButtonAppBar() {
 }}>
     <Container>
 <AppBar className='Appbar-setting' style={{
-    marginTop: '20%',
-    background: 'rgba(22, 22, 22, 0.8)',
-    border: '1px solid rgba(255, 255, 255, 0.08)',
-    backdropFilter: 'blur(16px)',
-    borderRadius: '1000px',
+   
+    
 
 }}>
-    <Toolbar>
+    <Toolbar style={{
+padding: '12px 12px 12px 12px',
+marginTop: '20%',
+background: 'rgba(22, 22, 22, 0.8)',
+border: '1px solid rgba(255, 255, 255, 0.08)',
+backdropFilter: 'blur(16px)',
+borderRadius: '1000px',
+width: '95%',
+marginRight: 'auto',
+marginLeft: 'auto'
+}}>
             <List style={{
-
-               
+width: '90%',
+                position: "fixed",
                
 
                

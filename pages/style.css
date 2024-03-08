@@ -46,7 +46,7 @@ body {
 
 @media screen and (max-width: 960px) {
     .hero {
-       padding-top: 20% !important;
+       padding-top: 30% !important;
        background: #141414;
 
     }
@@ -258,7 +258,7 @@ body {
     .nav-position  {
         position: static ;
         width: 100%;
-        top: 0px;
+        padding-top: 2%;
         z-index: 10;
         height: auto;
         background: #141414;

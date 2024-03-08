@@ -399,8 +399,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
         },
         '& .logo-2': {
             height: "auto",
-            width: "91%",
-            marginTop: "10px",
+            width: "110px",
         },
         '& .geniusbtn': {
             position: 'relative',
