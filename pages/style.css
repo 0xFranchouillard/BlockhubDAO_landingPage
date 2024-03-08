@@ -5,6 +5,7 @@ body {
     justify-content: center;
 
 }
+
 @font-face {
     font-family: Inter-Bold ;
     src: url("../src/assets/font-family/Inter-Bold.ttf");

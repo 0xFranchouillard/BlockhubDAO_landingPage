@@ -2,7 +2,6 @@ import React from 'react'
 import {Box, Container, Grid, Typography, Link} from '@mui/material';
 import {HomeStyle} from './Style'
 
-
 export default function Sickportfolio() {
     return (
         <HomeStyle className='div-element'>
@@ -37,24 +36,7 @@ export default function Sickportfolio() {
                                 </Link>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <div className='port-card'>
-                                <Link href={'https://www.cardashift.com/'} underline="none" target="_blank">
-                                <Box component="img" src="/images/cardashift.svg" width="100%" className='shutter-img'/>
-                                <div className='shtrpadign'>
-                                    <Typography variant="h4" gutterBottom className='Network-text'>
-                                        Cardashift
-                                    </Typography>
 
-                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
-                                        A launchpad on Cardano, or so they say. We were tipsy and misclicked, but hey,
-                                        happy accidents, right? right ???
-                                    </Typography>
-                                </div>
-                                </Link>
-
-                            </div>
-                        </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
                                 <Link href={'https://www.raremind.com/'} underline="none" target="_blank">
@@ -72,6 +54,7 @@ export default function Sickportfolio() {
                                 </Link>
                             </div>
                         </Grid>
+
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
                                 <Link href={'https://www.hashup.it/'} underline="none" target="_blank">
@@ -141,37 +124,22 @@ export default function Sickportfolio() {
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className='port-card'>
-                                <Link href={'https://quantixnft.xyz/'} underline="none" target="_blank">
-                                <Box component="img" src="/images/Quantix.svg" width="100%" className='shutter-img'/>
-                                <div className='shtrpadign'>
-                                    <Typography variant="h4" gutterBottom className='Network-text'>
-                                        Quantix
-                                    </Typography>
-                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
-                                        NFTs, yet again. Another attempt to bring liquidity to them. We're starting to
-                                        suspect one of our admin has too much sway in our decisions.
-                                    </Typography>
-                                </div>
-                                </Link>
-                            </div>
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <div className='port-card'>
                                 <Link href={'https://www.entangle.fi/'} underline="none" target="_blank">
-                                <Box component="img" src="/images/Entangle.svg" width="100%" className='shutter-img'/>
-                                <div className='shtrpadign'>
-                                    <Typography variant="h4" gutterBottom className='Network-text'>
-                                        Entangle
-                                    </Typography>
-                                    <Typography variant="h4" gutterBottom className='Apparently-text'>
-                                        Layer0, transforming everything into LSD, or something like that. We were sold
-                                        on the trippy part, so here we are!
-                                    </Typography>
-                                </div>
+                                    <Box component="img" src="/images/Entangle.svg" width="100%" className='shutter-img'/>
+                                    <div className='shtrpadign'>
+                                        <Typography variant="h4" gutterBottom className='Network-text'>
+                                            Entangle
+                                        </Typography>
+                                        <Typography variant="h4" gutterBottom className='Apparently-text'>
+                                            Layer0, transforming everything into LSD, or something like that. We were sold
+                                            on the trippy part, so here we are!
+                                        </Typography>
+                                    </div>
                                 </Link>
                             </div>
                         </Grid>
                     </Grid>
+
                     {/* card section ended */}
                 </Box>
             </Container>

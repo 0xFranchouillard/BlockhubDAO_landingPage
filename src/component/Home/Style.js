@@ -29,8 +29,14 @@ export const HomeStyle = styled('div')(({theme}) => ({
             height: "48px",
             width: "48px",
             cursor: "pointer",
-            background: "rgba(22, 22, 22, 0.8)",
+            background: "rgba(22, 22, 22, 0.6)",
             borderRadius: "50%",
+            '&:hover': {
+                background: 'linear-gradient(to right, #5227ff, #5c00ff)',
+                transform: 'scale(1.02)',
+                transition: 'transform 0.3s ease-in-out',
+                color: '#fff'
+            }
         },
         '& .right-nav': {
             textAlign: "end",
@@ -44,7 +50,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
         },
     },
     '& .nav-list-bg-rounded': {
-        background: "rgba(22, 22, 22)",
+        background: "rgba(22, 22, 22, 0.9)",
         border: "1px solid rgba(255, 255, 255, 0.08)",
         borderRadius: "100px",
         height: "58px",
@@ -71,6 +77,12 @@ export const HomeStyle = styled('div')(({theme}) => ({
         
         width: "134px",
         height: "48px",
+        '&:hover': {
+            background: 'linear-gradient(to right, #5227ff, #5c00ff)',
+            transform: 'scale(1.02)',
+            transition: 'transform 0.3s ease-in-out',
+            color: '#fff'
+        },
         '& img':{
             position: 'absolute',
             top: 0,
@@ -88,9 +100,10 @@ export const HomeStyle = styled('div')(({theme}) => ({
         fontSize: "16px",
         fontFamily: "Inter-Medium",
         textTransform: "capitalize",
-        '&:hover' : {
-            color: "#8F75ED !important"
-        }
+        '&:hover': {
+            transform: 'scale(1.05)',
+            transition: 'transform 0.3s ease-in-out'
+        },
     },
     '& .mob-draw': {
         '& .MuiList-root': {

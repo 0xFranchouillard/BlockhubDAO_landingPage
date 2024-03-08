@@ -67,12 +67,7 @@ export default function ButtonAppBar() {
                                     <div className='right-nav'>
                                         <List>
                                             <Hidden mdDown>
-                                                <ListItem>
-                                                    <a href={config.discord} target="_blank" rel="noopener noreferrer" className='aNavbar'>
-                                                            <Box component="img" src="/images/Discord.svg"
-                                                                 className='navButton'/>
-                                                    </a>
-                                                </ListItem>
+
                                                 <ListItem>
                                                     <a href={config.twitter} target="_blank" rel="noopener noreferrer" className='aNavbar'>
                                                             <Box component="img" src="/images/Twitter.svg"
