@@ -19,7 +19,7 @@ export default function Hero() {
                             <Link legacyBehavior href={config.mail}>
                                 <a>
                                     <Box textAlign="center" >
-                                    <Button variant="contained" color="primary" className='geniusbtn'> Apply now </Button>
+                                    <Button variant="contained" color="primary" className='geniusbtn'>  <img src="/images/button.svg "/>    Apply now </Button>
                                 </Box>
                                 </a>
                             </Link>

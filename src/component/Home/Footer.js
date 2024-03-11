@@ -10,8 +10,12 @@ export default function Footer() {
             <center>
             <div className='fotterbg'>
                 <Container>
-                    <Grid container>
-                        <Grid item xs={12} sm={4} md={4}>
+                    <Grid container >
+                        <Grid item xs={12} sm={4} md={4}
+                        style={{ display: "flex", justifyContent: "flex-start", flexDirection: 'column'}}
+                        align="left"
+                        gap={2}
+                        >
                             <Typography variant="h4" gutterBottom className='gettouch'>
                                 Get in touch
                             </Typography>
@@ -22,7 +26,9 @@ export default function Footer() {
                                 <Link legacyBehavior href={config.mail}
                                       target="_blank">
                                     <a>
-                                        <Button variant="contained" color="primary" className='ftraply'> Apply now </Button>
+                                        <Button variant="contained" color="primary" className='aplybtn'>
+                                            
+                                             <img src="/images/button.svg "/>    Apply now </Button>
                                     </a>
                                 </Link>
 
@@ -37,7 +43,15 @@ export default function Footer() {
 
                             </Grid>
                         </Hidden>
-                        <Grid item xs={12} sm={4} md={4}>
+                        <Grid item xs={12} sm={4} md={4} paddingLeft={3}
+                        className='footer-border'
+                        style={{ display: "flex", justifyContent: "flex-start", flexDirection: 'column',
+                    
+                    }}
+                        
+                        
+                        align="left"
+                        >
                             <Typography variant="h4" gutterBottom className='gettouch emailmob '>
                                 Email
                             </Typography>

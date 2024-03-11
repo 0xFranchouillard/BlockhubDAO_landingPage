@@ -1,85 +1,102 @@
 import {styled} from '@mui/material/styles';
 
 export const HomeStyle = styled('div')(({theme}) => ({
-    '& .nav-position': {
-        position: "fixed",
-        width: "100%",
-        top: "0px",
-        zIndex: "10",
-    },
+   
     '& .Appbar-setting': {
         background: "transparent",
         boxShadow: "none",
-        marginTop: "40px",
         borderRadius: "30px",
-        '& .MuiToolbar-root': {
-            padding: "unset",
 
-        },
         '& .MuiList-root': {
             display: "inline-flex",
-            marginTop: "10px",
+            
         },
         '& .MuiListItem-root': {
-            paddingLeft: "10px !important",
-            paddingRight: "10px !important",
+            paddingLeft: "5px !important",
+            paddingRight: "5px !important",
         },
         // '& .MuiListItem-root':{
         //     paddingRight:"unset",
         // },
-        '& .github': {
+        '& .navButton': {
             height: "48px",
             width: "48px",
             cursor: "pointer",
-            background: "rgba(22, 22, 22, 0.8)",
-            borderRadius: "40px",
+            background: "rgba(22, 22, 22, 0.6)",
+            borderRadius: "50%",
+            '&:hover': {
+                background: 'linear-gradient(to right, #5227ff, #5c00ff)',
+                transform: 'scale(1.02)',
+                transition: 'transform 0.3s ease-in-out',
+                color: '#fff'
+            }
         },
         '& .right-nav': {
             textAlign: "end",
             '& .MuiList-root': {
                 marginTop: "unset",
             },
+            // gap: '8px'
         },
         '& .menu-setting': {
             color: "#5911d9"
         },
     },
     '& .nav-list-bg-rounded': {
-        background: "rgba(22, 22, 22)",
+        background: "rgba(22, 22, 22, 0.9)",
         border: "1px solid rgba(255, 255, 255, 0.08)",
         borderRadius: "100px",
         height: "58px",
         padding: "12px 32px 12px 24px",
         gap: "0px",
     },
-    '& .right-nav': {
-        gap: "8px"
-    },
+
 
     '& .logo': {
         width: "34px",
         height: "34px",
     },
-    '& .MuiButton-containedPrimary': {
-        cursor: "pointer",
-        background: "linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)" +
-            ", radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)",
-        backgroundBlendMode: "overlay, normal",
-        border: "1px solid rgba(255, 255, 255, 0.16)",
-        boxShadow: "inset 0px -2px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 2px rgba(255, 255, 255, 0.4)",
-        borderRadius: "32px",
-        backdropFilter: "blur(16px)",
+    "& .MuiButton-containedPrimary" : {
+        cursor: 'pointer',
+        background: 'linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)' + ' ,radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)',
+        border: '1px solid rgba(255, 255, 255, 0.16)',
+        boxShadow: 'inset 0px -2px 2px rgba(0, 0, 0, 0.25)' +' inset 0px 1px 2px rgba(255, 255, 255, 0.4)',
+        borderRadius:' 32px',
+        backdropFilter:' blur(16px)',
     },
     '& .aplybtn': {
-        height: "48px",
+        position: 'relative',
+        overflow: 'hidden',
+        
         width: "134px",
+        height: "48px",
+        '&:hover': {
+            background: 'linear-gradient(to right, #5227ff, #5c00ff)',
+            transform: 'scale(1.02)',
+            transition: 'transform 0.3s ease-in-out',
+            color: '#fff'
+        },
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
+  
 
     '& .nav-btn': {
         color: "#B7B5BA !important",
         fontSize: "16px",
         fontFamily: "Inter-Medium",
         textTransform: "capitalize",
+        '&:hover': {
+            transform: 'scale(1.05)',
+            transition: 'transform 0.3s ease-in-out'
+        },
     },
     '& .mob-draw': {
         '& .MuiList-root': {
@@ -90,25 +107,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             color: "#B7B5BA !important",
         },
     },
-    '& .Genius-text': {
-/*        color: "#FFFFFF !important",
-        fontSize: "64px",
-        fontFamily: "PlusJakartaSans-Bold",
-        marginTop: "15%",
-        textAlign: "center",*/
-        /*color: "#FFFFFF !important",
-        fontSize: "64px",
-        fontFamily: "PlusJakartaSans-Bold",
-        marginTop: "15%",
-        textAlign: "center",
-        radialGradient: "101.76% 166.92% at 48.26% 44.93%, #FFFFFF 29.74%, rgba(255, 255, 255, 0) 100%",
-        webkitBackgroundClip: "text",
-        webkitTextFillColor: "transparent",
-        backgroundClip: "text",
-        fontWeight: "700",
-        LineWeight: "90px",
-        letterSpacing: "-0.04em",*/
-    },
+    
     '& .Blockhub-text': {
         /*color: "#FFFFFF !important",
         fontSize: "16px",
@@ -117,10 +116,21 @@ export const HomeStyle = styled('div')(({theme}) => ({
         lineHeight: "24px",*/
     },
     '& .geniusbtn': {
-        width: "166px",
-        height: "50px",
+        position: 'relative',
+        overflow: 'hidden',
         marginTop: "20px",
         marginBottom: "20px",
+        width: "166px",
+        height: "50px",
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
 
     '& .portfolio-text': {
@@ -139,8 +149,10 @@ export const HomeStyle = styled('div')(({theme}) => ({
         flexDirection: "column",
         alignItems: "flex-start",
         padding: "0px",
-        width: "500px",
-        height: "384px",
+        width: "auto",
+        maxWidth: "500px",
+        height: "auto",
+        maxHeight: "384px",
         background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
         border: "1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
@@ -256,7 +268,6 @@ export const HomeStyle = styled('div')(({theme}) => ({
     },
 
     '& .colapse-bg': {
-        background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
         borderRadius: "24px",
@@ -278,10 +289,20 @@ export const HomeStyle = styled('div')(({theme}) => ({
     '& .ftraply': {
         fontSize: "14px",
         width: "130px",
-        marginTop: "15px",
+        position: 'relative',
+        overflow: 'hidden',
+        
+        '& img':{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: -1, /* Places the SVG behind the button text */
+        }
     },
-
-
+   
     '& .copy-text': {
         color: "#B7B5BA",
         fontSize: "12px",
@@ -378,13 +399,24 @@ export const HomeStyle = styled('div')(({theme}) => ({
         },
         '& .logo-2': {
             height: "auto",
-            width: "91%",
-            marginTop: "10px",
+            width: "110px",
         },
-        '& .aplybtn': {
-            width: "116px",
-            fontSize: "12px",
-
+        '& .geniusbtn': {
+            position: 'relative',
+            overflow: 'hidden',
+            marginTop: "20px",
+            marginBottom: "20px",
+            width: "166px",
+            height: "50px",
+            '& img':{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                pointerEvents: 'none',
+                zIndex: -1, /* Places the SVG behind the button text */
+            }
         },
         '& .Genius-text': {
             //marginTop: "200px",

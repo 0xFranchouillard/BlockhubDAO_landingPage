@@ -4,7 +4,7 @@ import {HomeStyle} from './Style'
 
 export default function Investment() {
     return (
-        <HomeStyle>
+        <HomeStyle className='div-element'>
             <Box py={10}>
                 <Container>
                     <Typography variant="h4" gutterBottom className='thesis' id='news'>

@@ -1,51 +1,125 @@
-import React, { useState, useRef } from 'react';
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import React, { useState, useEffect } from 'react';
+import { ReactCompareSlider } from 'react-compare-slider';
 
 export default function ImageSlicer() {
     const [sliderPosition, setSliderPosition] = useState(50);
-    //const handlerRef = useRef(null);
 
-    /*const handleSliderPositionChange = (position) => {
-        let auto = false;
-        if (position > 75) {
-            setSliderPosition(100);
-            auto = true;
-        } else if (position < 25) {
-            setSliderPosition(0);
-            auto = true;
-        } else if (position >= 25 && position <= 75){
-            if (handlerRef.current) {
-                handlerRef.current.style.opacity = 1;
-            }
-            auto = false;
+    useEffect(() => {
+        const handleContainer = document.querySelector('[data-rcs="handle-container"]');
+        if (handleContainer) {
+            handleContainer.style.zIndex = 1000;
         }
-        if (auto) {
-            if (handlerRef.current) handlerRef.current.style.opacity = 0;
-        }
-        console.log("Handler position:", position);
-    };*/
+    }, []);
+
+    const handleSliderChange = newPosition => {
+        setSliderPosition(newPosition);
+    };
+
+    const CustomHandle = () => {
+        return (
+            <div
+                style={{
+                    position: 'absolute',
+                    width: '7.42px',
+                    height: '460.63px',
+                    left: 'calc(50% - 7.42px/2 + 0.39px)',
+                    top: 'calc(50% - 460.63px/2 + 0.1px)',
+                    background: 'rgba(131, 131, 131, 0.32)',
+                    border: '0.39053px solid rgba(255, 255, 255, 0.32)',
+                    boxShadow: '0px 0px 6.24847px #6100FF, inset -0.39053px -0.781059px 1.56212px rgba(0, 0, 0, 0.25), inset 0.39053px 0.781059px 4.68636px rgba(255, 255, 255, 0.64)',
+                    backdropFilter: 'blur(3.12424px)',
+                    borderRadius: '19.5265px',
+                    cursor: 'pointer',
+                    zIndex: 50, 
+                }}
+            ></div>
+        );
+    };
 
     return (
-        <ReactCompareSlider
-            boundsPadding={0}
-            handle={
-                <img
-                    src="/images/slider.png"
-                    alt="slicer"
-                    className={"slicer"}
-                />
-            }
-            itemOne={<ReactCompareSliderImage src="/images/PepeSilver.jpg" alt="Image one" />}
-            itemTwo={<ReactCompareSliderImage src="/images/PepePurple.jpg" alt="Image two" />}
-            //onPositionChange={handleSliderPositionChange}
-            position={sliderPosition}
-            portrait={false}
-            onlyHandleDraggable={false}
-            changePositionOnHover={false}
-            style={{
-                flexGrow: 1,
-                width: '100%'
-            }}
-        />
+        <div style={{ width: '100%', height: '100%', paddingTop: '20px'}}>
+             <div className='elipse-hero'
+          
+            />
+            <ReactCompareSlider
+                handle={<CustomHandle />}
+                itemTwo={
+                    <>
+                    <div
+                        style={{
+                            clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}%  100%)`,
+                            position: 'relative',
+                            height: '100%',
+                        }}
+                    >
+                        <img
+                            src="/images/PepePurple.png"
+                            alt="Image one"
+                            style={{ width: '100%' }}
+                        />
+                        <img
+                            src="/images/headPepePurple.png"
+                            alt="Image one"
+                            style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: '50%',
+                                transform: 'translateX(-50%)',
+                                maxWidth: '100%',
+                                zIndex: 2, 
+                            }}
+                        />
+                    </div>
+
+                    </>
+                }
+                itemOne={
+                   <>
+                    <div
+                        style={{
+                            clipPath: `polygon(0 0, 0 100%, ${sliderPosition}% 100%, ${sliderPosition}% 0)`,
+                            position: 'relative',
+                            height: '100%',
+                            textAlign: 'center',
+                           
+                        }}
+                    >
+                        <img
+                            src="/images/PepeSilver.png"
+                            alt="Image two"
+                            style={{ width: '100%',
+                        
+                        }}
+                        />
+                        <img
+                            src="/images/headPepeSilver.png"
+                            alt="Image two"
+                            style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: '50%',
+                                transform: 'translateX(-50%)',
+                                maxWidth: '46%',
+                                zIndex: 2, // Ajustement du niveau de z-index
+                                filter: 'grayscale(100%)',
+                            }}
+                        />
+                    </div>
+                   </>
+                }
+                position={sliderPosition}
+                onPositionChange={handleSliderChange}
+                portrait={false}
+                onlyHandleDraggable={false}
+                changePositionOnHover={false}
+                style={{
+                    flexGrow: 1,
+                    width: '100%',
+                    height: '100%',
+                    zIndex: 2, // Ajustement du niveau de z-index
+                }}
+            />
+           
+        </div>
     );
 }
