@@ -4,9 +4,10 @@ import {HomeStyle} from './Style'
 
 export default function Sickportfolio() {
     return (
-        <HomeStyle className='div-element'>
+            <HomeStyle className='div-element' >
+            <Box paddingTop={20} id='portfolio'>
             <Container>
-                <Typography variant="h4" gutterBottom className='portfolio-text' id='portfolio'>
+                <Typography variant="h4" gutterBottom className='portfolio-text' >
                     Our sick portfolio
                 </Typography>
 
@@ -143,6 +144,7 @@ export default function Sickportfolio() {
                     {/* card section ended */}
                 </Box>
             </Container>
+            </Box>
         </HomeStyle>
     )
 }

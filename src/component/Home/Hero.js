@@ -34,7 +34,7 @@ export default function Hero() {
                             </Link>
                         </Box>
                     </Grid>
-                                                <Box component="img" src="/images/partnership.svg" width="100%" my={15}/>
+                                                <Box component="img" src="/images/partnership.svg" width="100%" marginTop={15}  />
 
                 </Grid>
             </Container>    

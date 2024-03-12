@@ -368,6 +368,9 @@ export const HomeStyle = styled('div')(({theme}) => ({
                 paddingRight: "unset",
             },
         },
+        '& .nav-btn':{
+            fontSize: '10px'
+        },
         '& .portfolio-text': {
             fontSize: "36px",
         },

@@ -188,9 +188,7 @@ export default function ButtonAppBar() {
 </AppBar>
 </Container>
 </div>
-<div className='nav-position' style={{
-
-}}>
+<div className='nav-position' id="navbar-responsive">
     <Container>
 <AppBar className='Appbar-setting' style={{
    
@@ -199,7 +197,7 @@ export default function ButtonAppBar() {
 }}>
     <Toolbar style={{
 padding: '12px 12px 12px 12px',
-marginTop: '20%',
+marginTop: '10%',
 background: 'rgba(22, 22, 22, 0.8)',
 border: '1px solid rgba(255, 255, 255, 0.08)',
 backdropFilter: 'blur(16px)',
@@ -250,57 +248,7 @@ width: '90%',
     </Toolbar>
 </AppBar>
 </Container>
-<Container>
-    <AppBar className='Appbar-setting' style={{
-    marginTop: '40%',
-    padding: '0',
-   
-}}>
-    <Toolbar style={{
- display: 'flex',
- alignItems: 'center',
- justifyContent: 'center',
- flexDirection: 'column'
-}}>
-            <List style={{
 
-                position: "fixed",
-               
-
-               
-            }}>
-            <Hidden mdUp>
-            <ListItem>
-                                                    <a href={config.twitter} target="_blank" rel="noopener noreferrer" className='aNavbar'>
-                                                            <Box component="img" src="/images/Twitter.svg"
-                                                                 className='navButton'/>
-                                                    </a>
-                                                </ListItem>
-                                                <ListItem >
-                                                    <a href={config.mirror}
-                                                          target="_blank" rel="noopener noreferrer" className='aNavbar'>
-                                                            <Box component="img" src="/images/Mirror.svg"
-                                                                 className='navButton'/>
-                                                    </a>
-                                                </ListItem>
-                                                <ListItem
-                                                
-                                                >
-                                                    <a href={config.github}
-                                                          target="_blank" rel="noopener noreferrer"
-                                                          className='aNavbar'
-                                                          >
-                                                            <Box component="img" src="/images/Git.svg"
-                                                                 className='navButton'
-                                                                 />
-                                                    </a>
-                                                </ListItem>
-                    </Hidden>
-            </List>
- 
-    </Toolbar>
-</AppBar>
-</Container>
 </div>
 </Hidden>
         </HomeStyle>
