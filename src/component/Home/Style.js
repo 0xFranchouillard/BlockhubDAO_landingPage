@@ -1,7 +1,6 @@
-import {styled} from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
-export const HomeStyle = styled('div')(({theme}) => ({
-   
+export const HomeStyle = styled('div')(({ theme }) => ({
     '& .Appbar-setting': {
         background: "transparent",
         boxShadow: "none",
@@ -9,15 +8,11 @@ export const HomeStyle = styled('div')(({theme}) => ({
 
         '& .MuiList-root': {
             display: "inline-flex",
-            
         },
         '& .MuiListItem-root': {
             paddingLeft: "5px !important",
             paddingRight: "5px !important",
         },
-        // '& .MuiListItem-root':{
-        //     paddingRight:"unset",
-        // },
         '& .navButton': {
             height: "48px",
             width: "48px",
@@ -36,7 +31,6 @@ export const HomeStyle = styled('div')(({theme}) => ({
             '& .MuiList-root': {
                 marginTop: "unset",
             },
-            // gap: '8px'
         },
         '& .menu-setting': {
             color: "#5911d9"
@@ -56,18 +50,18 @@ export const HomeStyle = styled('div')(({theme}) => ({
         width: "34px",
         height: "34px",
     },
-    "& .MuiButton-containedPrimary" : {
+    "& .MuiButton-containedPrimary": {
         cursor: 'pointer',
         background: 'linear-gradient(96.34deg, rgba(82, 39, 255, 0.8) 0%, rgba(97, 0, 255, 0.8) 100%)' + ' ,radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.256) 100%)',
         border: '1px solid rgba(255, 255, 255, 0.16)',
-        boxShadow: 'inset 0px -2px 2px rgba(0, 0, 0, 0.25)' +' inset 0px 1px 2px rgba(255, 255, 255, 0.4)',
-        borderRadius:' 32px',
-        backdropFilter:' blur(16px)',
+        boxShadow: 'inset 0px -2px 2px rgba(0, 0, 0, 0.25)' + ' inset 0px 1px 2px rgba(255, 255, 255, 0.4)',
+        borderRadius: ' 32px',
+        backdropFilter: ' blur(16px)',
     },
     '& .aplybtn': {
         position: 'relative',
         overflow: 'hidden',
-        
+
         width: "134px",
         height: "48px",
         '&:hover': {
@@ -76,7 +70,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             transition: 'transform 0.3s ease-in-out',
             color: '#fff'
         },
-        '& img':{
+        '& img': {
             position: 'absolute',
             top: 0,
             left: 0,
@@ -86,7 +80,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             zIndex: -1, /* Places the SVG behind the button text */
         }
     },
-  
+
 
     '& .nav-btn': {
         color: "#B7B5BA !important",
@@ -107,13 +101,13 @@ export const HomeStyle = styled('div')(({theme}) => ({
             color: "#B7B5BA !important",
         },
     },
-    
+
     '& .Blockhub-text': {
-        /*color: "#FFFFFF !important",
-        fontSize: "16px",
+        //color: "#FFFFFF !important",
+        //fontSize: "16px",
         fontFamily: "Inter-Medium",
         textAlign: "center",
-        lineHeight: "24px",*/
+        lineHeight: "24px",
     },
     '& .geniusbtn': {
         position: 'relative',
@@ -122,7 +116,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
         marginBottom: "20px",
         width: "166px",
         height: "50px",
-        '& img':{
+        '& img': {
             position: 'absolute',
             top: 0,
             left: 0,
@@ -291,8 +285,8 @@ export const HomeStyle = styled('div')(({theme}) => ({
         width: "130px",
         position: 'relative',
         overflow: 'hidden',
-        
-        '& img':{
+
+        '& img': {
             position: 'absolute',
             top: 0,
             left: 0,
@@ -302,7 +296,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             zIndex: -1, /* Places the SVG behind the button text */
         }
     },
-   
+
     '& .copy-text': {
         color: "#B7B5BA",
         fontSize: "12px",
@@ -368,7 +362,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
                 paddingRight: "unset",
             },
         },
-        '& .nav-btn':{
+        '& .nav-btn': {
             fontSize: '10px'
         },
         '& .portfolio-text': {
@@ -411,7 +405,7 @@ export const HomeStyle = styled('div')(({theme}) => ({
             marginBottom: "20px",
             width: "166px",
             height: "50px",
-            '& img':{
+            '& img': {
                 position: 'absolute',
                 top: 0,
                 left: 0,
@@ -427,3 +421,4 @@ export const HomeStyle = styled('div')(({theme}) => ({
         }
     }
 }));
+

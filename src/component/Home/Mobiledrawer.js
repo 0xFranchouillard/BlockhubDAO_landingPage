@@ -29,7 +29,28 @@ export default function TemporaryDrawer() {
 
     return (
         <HomeStyle>
-            <List>
+            {['left',].map((anchor) => (
+                <React.Fragment key={anchor}>
+                    <Button onClick={toggleDrawer(anchor, true)}><MenuIcon fontSize='large'
+                                                                           color="menu-setting"/></Button>
+                    <Drawer
+                        anchor={anchor}
+                        open={state[anchor]}
+                        onClose={toggleDrawer(anchor, false)}
+                        sx={{
+                            '& .MuiDrawer-paper': {
+                                background: "rgba(22, 22, 22, 0.8)",
+                            },
+                        }}
+                    >
+                        <Box
+                            sx={{width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250}}
+                            role="presentation"
+                            onClick={toggleDrawer(anchor, false)}
+                            onKeyDown={toggleDrawer(anchor, false)}
+                        >
+                            <div className='mob-draw'>
+                                <List>
                                     <ListItem>
                                         <ListItemButton className='nav-btn' sx={{color: "white"}} href='#portfolio'>
 
@@ -96,6 +117,11 @@ export default function TemporaryDrawer() {
 
 
                                 </List>
+                            </div>
+                        </Box>
+                    </Drawer>
+                </React.Fragment>
+            ))}
         </HomeStyle>
     );
 }
