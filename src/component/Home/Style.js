@@ -157,6 +157,9 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         order: "0",
         flexGrow: "1"
     },
+    ".port-card:hover": {
+        filter: "brightness(1.25)",
+    },
     '& .news-card': {
         background: "radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
         border: " 1px solid rgba(255, 255, 255, 0.16)",
