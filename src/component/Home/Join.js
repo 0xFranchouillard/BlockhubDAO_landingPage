@@ -1,6 +1,6 @@
 import React from 'react'
-import {Box, Button, Container, Grid, Typography} from '@mui/material';
-import {HomeStyle} from './Style'
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { HomeStyle } from './Style'
 import config from "../../../config";
 import Link from "next/link";
 export default function Hero() {
@@ -19,8 +19,10 @@ export default function Hero() {
                             <Link legacyBehavior href={config.mail}>
                                 <a>
                                     <Box textAlign="center" >
-                                    <Button variant="contained" color="primary" className='geniusbtn'>  <img src="/images/button.svg "/>    Apply now </Button>
-                                </Box>
+                                        <Button variant="contained" color="primary" className='geniusbtn'>  <img src="/images/button.svg " />
+                                            <Typography sx={{ fontFamily: 'PlusJakartaSans-Bold', textTransform: 'capitalize', fontSize: 14 }}>Apply now</Typography>
+                                        </Button>
+                                    </Box>
                                 </a>
                             </Link>
                         </Grid>

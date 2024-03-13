@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import {Container, Grid, Hidden, List, ListItem} from '@mui/material';
+import {Container, Grid, Hidden, List, ListItem, Typography} from '@mui/material';
 import {HomeStyle} from './Style'
 import MobileDrawer from './Mobiledrawer'
 import Link from "next/link";
@@ -94,9 +94,9 @@ export default function ButtonAppBar() {
                                             <ListItem>
                                                 <a href={config.mail}>
                                                         <Button variant="contained" color="primary" className='aplybtn'> 
-                                                        <img src="/images/button.svg "/>   
-                                                        Apply
-                                                            now </Button>
+                                                        <img src="/images/button.svg "/>
+                                                        <Typography sx={{fontFamily:'PlusJakartaSans-Bold', textTransform:'capitalize', fontSize:14}}>Apply now</Typography>
+                                                        </Button>
                                                 </a>
                                             </ListItem>
                                           
@@ -172,9 +172,9 @@ export default function ButtonAppBar() {
                         <ListItem>
                             <a href={config.mail}>
                                     <Button variant="contained" color="primary" className='aplybtn'> 
-                                    <img src="/images/button.svg "/>   
-                                    Apply
-                                        now </Button>
+                                    <img src="/images/button.svg "/>
+                                    <Typography sx={{fontFamily:'PlusJakartaSans-Bold', textTransform:'capitalize', fontSize:14}}>Apply now</Typography>
+                                    </Button>
                             </a>
                         </ListItem>
                         

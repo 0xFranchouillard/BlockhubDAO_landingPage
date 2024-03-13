@@ -27,10 +27,8 @@ export default function Hero() {
                                     <a >
                                         <Button variant="contained" color="primary" className='geniusbtn'>
                                             <img src="/images/button.svg " />
-                                            Apply
-                                            now
-
-                                        </Button>
+                                            <Typography sx={{fontFamily:'PlusJakartaSans-Bold', textTransform:'capitalize', fontSize:14}}>Apply now</Typography>
+                                            </Button>
                                     </a>
                                 </Link>
                                 <ImageSlicer />

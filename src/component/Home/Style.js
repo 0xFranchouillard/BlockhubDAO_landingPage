@@ -57,10 +57,12 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         boxShadow: 'inset 0px -2px 2px rgba(0, 0, 0, 0.25)' + ' inset 0px 1px 2px rgba(255, 255, 255, 0.4)',
         borderRadius: ' 32px',
         backdropFilter: ' blur(16px)',
+        fontFamily: "PlusJakartaSans-Bold",
     },
     '& .aplybtn': {
         position: 'relative',
         overflow: 'hidden',
+        fontFamily: "PlusJakartaSans-Bold",
 
         width: "134px",
         height: "48px",
@@ -85,7 +87,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
     '& .nav-btn': {
         color: "#B7B5BA !important",
         fontSize: "16px",
-        fontFamily: "Inter-Medium",
+        fontFamily: "PlusJakartaSans-Bold",
         textTransform: "capitalize",
         '&:hover': {
             transform: 'scale(1.05)',
