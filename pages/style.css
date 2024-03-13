@@ -223,6 +223,7 @@ body {
         background: linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%);
         opacity: 0.4;
         filter: blur(200px);
+        z-index: -10;
     }
 
     .footer-border {

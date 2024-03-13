@@ -4,9 +4,13 @@ import { HomeStyle } from './Style'
 import config from "../../../config";
 import Link from "next/link";
 import ImageSlicer from "./ImageSlicer";
+import hydnlogo from "../../../public/images/hydnlogo.svg";
+import moondaylogo from "../../../public/images/moondaylogo-white.svg";
+import Image from 'next/image';
+
 export default function Hero() {
     return (
-        <HomeStyle className='hero vectors4-hero' >
+        <HomeStyle sx={{zIndex:10}} className='hero vectors4-hero' >
             <Box className=''>
                 <Container className='internal-hero'>
                     <Typography variant="h4" gutterBottom className="Genius-text">
@@ -30,18 +34,20 @@ export default function Hero() {
                                     </a>
                                 </Link>
                                 <ImageSlicer />
-                                <Typography variant='p' className='Blockhub-text'>In partnership with</Typography>
-                                <Link href={'https://hydnsec.com/'} underline="none" target="_blank">
-                                <Box component="img" src="/images/hydnlogo.svg" width="100%" className=''/>
-                                </Link>
-                                <Link href={'https://moonday.design/'} underline="none" target="_blank">
-                                <Box component="img" src="/images/moondaylogo-white.svg" width="100%" className=''/>
-                                </Link>
                             </Box>
                         </Grid>
-                        {/* <Box component="img" src="/images/partnership.svg" width="100%" marginTop={15} /> */}
-
                     </Grid>
+                    <Box sx={{ display: 'flex', gap: 4, flexDirection: 'column', marginTop:8, zIndex:10 }}>
+                        <Typography variant='p' className='Blockhub-text'>In partnership with</Typography>
+                        <Box sx={{ display: 'flex', gap: 8, flexDirection: 'row', alignItems:'center', justifyContent:'center' }}>
+                            <Link href='https://hydnsec.com/' underline="none" target="_blank">
+                                <Image src={hydnlogo} />
+                            </Link>
+                            <Link href='https://moonday.design/' underline="none" target="_blank">
+                                <Image src={moondaylogo} />
+                            </Link>
+                        </Box>
+                    </Box>
                 </Container>
             </Box>
         </HomeStyle>
