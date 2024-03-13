@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
                                             <ListItem>
                                                 <Link legacyBehavior href="#">
                                                     <a>
-                                                        <Box component="img" alt='' src="/images/logo.png"
+                                                        <Box component="img" alt='' src="/images/logoImgLight-64.svg"
                                                              className='logo aNavbar'/>
                                                     </a>
                                                 </Link>
