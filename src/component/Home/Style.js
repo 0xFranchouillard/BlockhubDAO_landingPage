@@ -167,6 +167,9 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         borderRadius: "32px",
         height: "529px",
     },
+    ".news-card:hover": {
+        filter: "brightness(1.25)",
+    },
     '& .shutter-img': {
         borderTopLeftRadius: "32px",
         borderTopRightRadius: "32px",
