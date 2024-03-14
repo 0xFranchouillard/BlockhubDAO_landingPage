@@ -43,7 +43,10 @@ export default function ButtonAppBar() {
                         <AppBar position="static" className='Appbar-setting '>
                             <Toolbar>
                                 <Grid container>
-                                    <Grid item xs={5} sm={6}>
+                                    <Grid item xs={5} sm={6} style={{
+                                    display: "flex", 
+                                    alignItems: "center"
+                                }}>
                                         <List className='nav-list-bg-rounded'>
                                             <Hidden mdDown>
                                                 <ListItem>
