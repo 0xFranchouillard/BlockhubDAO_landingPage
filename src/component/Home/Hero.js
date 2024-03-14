@@ -41,9 +41,7 @@ export default function Hero() {
                             <Link href='https://hydnsec.com/' underline="none" target="_blank">
                                 <Image src={hydnlogo} />
                             </Link>
-                            <Link href='https://moonday.design/' underline="none" target="_blank">
-                                <Image src={moondaylogo} />
-                            </Link>
+                          
                         </Box>
                     </Box>
                 </Container>

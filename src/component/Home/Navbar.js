@@ -9,6 +9,27 @@ import MobileDrawer from './Mobiledrawer'
 import Link from "next/link";
 import config from '../../../config.js';
 export default function ButtonAppBar() {
+    const [scrollPosition, setScrollPosition] = React.useState(0)
+    const [navMarginTop, setNavMarginTop] = React.useState('10%');
+    const navRef = React.useRef(null)
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            // Mettre à jour la position de défilement dans l'état
+            setScrollPosition(window.scrollY);
+            if (navRef.current) {
+                const newMarginTop = window.scrollY > 80 ? '5%' : navRef.current.offsetHeight + 'px' ;
+                setNavMarginTop(newMarginTop);
+            }
+
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <HomeStyle>
             <Hidden mdDown>
@@ -116,7 +137,7 @@ export default function ButtonAppBar() {
 
             <Hidden mdUp>
 <div className='nav-position'>
-    <Container>
+    <Container ref={navRef}>
 <AppBar className='Appbar-setting nav-position'>
     <Toolbar>
         <Grid container>
@@ -197,14 +218,15 @@ export default function ButtonAppBar() {
 }}>
     <Toolbar style={{
 padding: '12px 12px 12px 12px',
-marginTop: '10%',
 background: 'rgba(22, 22, 22, 0.8)',
 border: '1px solid rgba(255, 255, 255, 0.08)',
 backdropFilter: 'blur(16px)',
 borderRadius: '1000px',
 width: '95%',
+marginTop: navMarginTop,
 marginRight: 'auto',
-marginLeft: 'auto'
+marginLeft: 'auto',
+transition: 'margin-top 0.2s ease'
 }}>
             <List style={{
 width: '90%',
