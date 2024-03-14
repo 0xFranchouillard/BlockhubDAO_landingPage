@@ -167,6 +167,9 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         borderRadius: "32px",
         height: "529px",
     },
+    ".news-card:hover": {
+        filter: "brightness(1.25)",
+    },
     '& .shutter-img': {
         borderTopLeftRadius: "32px",
         borderTopRightRadius: "32px",
@@ -256,6 +259,10 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         position: "relative",
         borderRadius: "32px",
+        justifyContent: "start",
+        alignItems: "center",
+        padding: "16px 24px",
+        
         "&:hover": {
             background: " radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0.1024) 100%)",
             border: " 1px solid rgba(255, 255, 255, 0.16)",
@@ -269,7 +276,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
     '& .colapse-bg': {
         border: " 1px solid rgba(255, 255, 255, 0.16)",
         backdropFilter: "blur(16px)",
-        borderRadius: "24px",
+        borderRadius: "32px",
     },
     '& .colapse-inner-pd': {
         padding: "15px",
