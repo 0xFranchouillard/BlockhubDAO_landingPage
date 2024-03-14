@@ -214,15 +214,14 @@ body {
     .elipse-hero {
         position: absolute;
         left: 50%;
-        top: 110%;
         transform: translate(-50%, -50%);
         width: 100%;
-        height: 100%;
+        height: 150%;
         border-radius: 50%;
         background: linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%);
-        opacity: 0.4;
+        opacity: 1;
         filter: blur(200px);
-        z-index: -10;
+        margin-top: 35%;
     }
 
     .footer-border {
@@ -241,14 +240,15 @@ body {
     .elipse-hero {
         position: absolute;
     left: 50%;
-    top: 130%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%;
+    height: 150%;
     border-radius: 50%;
     background: linear-gradient(180deg, #5227FF 0%, rgba(97, 0, 255, 0) 100%);
     opacity: 1;
-    filter: blur(177px);
+    filter: blur(200px);
+    margin-top: 35%;
+
     }
 
     .footer-border {
