@@ -38,7 +38,7 @@ export default function Hero() {
                     </Grid>
                     <Box sx={{ display: 'flex', gap: 4, flexDirection: 'column', marginTop:8, zIndex:10 }}>
                         <Typography variant='p' className='Blockhub-text'>In partnership with</Typography>
-                        <Box sx={{ display: 'flex', gap: 8, flexDirection: 'row', alignItems:'center', justifyContent:'center' }}>
+                        <Box sx={{ display: 'flex', gap: 8, flexDirection: 'row', flexWrap: 'wrap', alignItems:'center', justifyContent:'center' }}>
                             <Link href='https://hydnsec.com/' underline="none" target="_blank" className="partners">
                                 <Image src={hydnlogo} />
                             </Link>
