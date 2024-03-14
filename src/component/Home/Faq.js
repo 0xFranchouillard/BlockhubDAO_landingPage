@@ -1,6 +1,6 @@
 import React from 'react'
-import {Box, Button, Container, Grid, Typography} from '@mui/material';
-import {HomeStyle} from './Style'
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { HomeStyle } from './Style'
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
@@ -23,14 +23,14 @@ export default function Investment() {
                     <Box my={5} >
                         <Grid container justifyContent="center">
                             <Grid item xs={11} sm={10} md={8}>
-
-
-
                                 <div className='colapse-bg'>
                                     <Button variant="contained" onClick={() => {
-                                        setOpen({...open, colapse1: !open.colapse1})
-                                    }} className='colapsebtn' color="secondary" fullWidth>What is BlockHub
-                                        DAO? {open.colapse1 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                        setOpen({ ...open, colapse1: !open.colapse1 })
+                                    }} className='colapsebtn' color="secondary" fullWidth>
+                                        <Typography sx={{ fontFamily: 'PlusJakartaSans-Bold', textTransform: 'capitalize', fontSize: 14 }}>
+                                            What is BlockHub DAO?
+                                        </Typography>
+                                        {open.colapse1 ? <ExpandLess /> : <ExpandMore />}</Button>
                                     <Collapse in={open.colapse1} timeout="auto" unmountOnExit>
                                         <div className='colapse-inner-pd'>
                                             <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -65,9 +65,12 @@ export default function Investment() {
                                 <Box my={2}>
                                     <div className='colapse-bg'>
                                         <Button variant="contained" onClick={() => {
-                                            setOpen({...open, colapse2: !open.colapse2})
-                                        }} className='colapsebtn' color="secondary" fullWidth>How does Blockhub DAO
-                                            operate ? {open.colapse2 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                            setOpen({ ...open, colapse2: !open.colapse2 })
+                                        }} className='colapsebtn' color="secondary" fullWidth>
+                                            <Typography sx={{ fontFamily: 'PlusJakartaSans-Bold', textTransform: 'capitalize', fontSize: 14 }}>
+                                                How does Blockhub DAO operate ?
+                                            </Typography>
+                                            {open.colapse2 ? <ExpandLess /> : <ExpandMore />}</Button>
                                         <Collapse in={open.colapse2} timeout="auto" unmountOnExit>
                                             <div className='colapse-inner-pd'>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -79,12 +82,12 @@ export default function Investment() {
                                                     with a call involving the project team and our members.
                                                 </Typography>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'
-                                                            mt={2}>
+                                                    mt={2}>
                                                     This in-depth discussion allows us to thoroughly assess the
                                                     project's potential.
                                                 </Typography>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'
-                                                            mt={2}>
+                                                    mt={2}>
                                                     Subsequently, our DAO conducts a two-step voting process using
                                                     snapshot votes. The first vote determines whether we, as a
                                                     collective, want to invest in the project. If the outcome is
@@ -103,9 +106,12 @@ export default function Investment() {
                                     <div className='colapse-bg'>
 
                                         <Button variant="contained" onClick={() => {
-                                            setOpen({...open, colapse3: !open.colapse3})
-                                        }} className='colapsebtn' color="secondary" fullWidth>What kind of projects are
-                                            you interested in ? {open.colapse3 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                            setOpen({ ...open, colapse3: !open.colapse3 })
+                                        }} className='colapsebtn' color="secondary" fullWidth>
+                                            <Typography sx={{ fontFamily: 'PlusJakartaSans-Bold', textTransform: 'capitalize', fontSize: 14 }}>
+                                                What kind of projects are you interested in ?
+                                            </Typography>
+                                            {open.colapse3 ? <ExpandLess /> : <ExpandMore />}</Button>
                                         <Collapse in={open.colapse3} timeout="auto" unmountOnExit>
                                             <div className='colapse-inner-pd'>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -118,21 +124,20 @@ export default function Investment() {
                                                     promising opportunities in the dynamic world of blockchain and Web
                                                     3.0.
                                                 </Typography>
-
-
                                             </div>
                                         </Collapse>
                                     </div>
                                 </Box>
 
                                 <Box my={2}>
-
                                     <div className='colapse-bg'>
-
                                         <Button variant="contained" onClick={() => {
-                                            setOpen({...open, colapse4: !open.colapse4})
-                                        }} className='colapsebtn' color="secondary" fullWidth>How to Join the
-                                            Elite? {open.colapse4 ? <ExpandLess/> : <ExpandMore/>}</Button>
+                                            setOpen({ ...open, colapse4: !open.colapse4 })
+                                        }} className='colapsebtn' color="secondary" fullWidth>
+                                            <Typography sx={{ fontFamily: 'PlusJakartaSans-Bold', textTransform: 'capitalize', fontSize: 14 }}>
+                                                How to Join the Elite?
+                                            </Typography>
+                                            {open.colapse4 ? <ExpandLess /> : <ExpandMore />}</Button>
                                         <Collapse in={open.colapse4} timeout="auto" unmountOnExit>
                                             <div className='colapse-inner-pd'>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'>
@@ -144,7 +149,7 @@ export default function Investment() {
                                                     community.
                                                 </Typography>
                                                 <Typography variant="h4" gutterBottom className='Apparently-text'
-                                                            mt={2}>
+                                                    mt={2}>
                                                     If an application is approved by the majority of DAO members, the
                                                     applicant automatically becomes a member, provided they hold at
                                                     least 500 BHDAO tokens. The sale of BHDAO tokens is open to
@@ -152,7 +157,6 @@ export default function Investment() {
                                                     DAO section of our Discord server and be considered as one of its
                                                     members.
                                                 </Typography>
-
                                             </div>
                                         </Collapse>
                                     </div>
