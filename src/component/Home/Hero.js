@@ -28,16 +28,16 @@ export default function Hero() {
                                         <Button variant="contained" color="primary" className='geniusbtn'>
                                             <img src="/images/button.svg " />
                                             <Typography sx={{fontFamily:'PlusJakartaSans-Bold', textTransform:'capitalize', fontSize:14}}>Apply now</Typography>
-                                            </Button>
+                                        </Button>
                                     </a>
                                 </Link>
                                 <ImageSlicer />
                             </Box>
                         </Grid>
                     </Grid>
-                    <Box sx={{ display: 'flex', gap: 4, flexDirection: 'column', marginTop:8, zIndex:10 }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', marginTop:8, zIndex:10 }}>
                         <Typography variant='p' className='Blockhub-text'>In partnership with</Typography>
-                        <Box sx={{ display: 'flex', gap: 8, flexDirection: 'column', alignItems:'center', justifyContent:'center' }}>
+                        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: { xs: 4, sm: 8 }, alignItems:'center', justifyContent:'center' }}>
                             <Link href='https://hydnsec.com/' underline="none" target="_blank">
                                 <Image src={hydnlogo} />
                             </Link>
