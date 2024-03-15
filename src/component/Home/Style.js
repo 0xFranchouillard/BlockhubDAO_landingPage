@@ -171,11 +171,13 @@ export const HomeStyle = styled('div')(({ theme }) => ({
         filter: "brightness(1.25)",
     },
     '& .shutter-img': {
+        display: "flex",
+        flexDirection: "column",
         borderTopLeftRadius: "32px",
         borderTopRightRadius: "32px",
     },
     '& .shtrpadign': {
-        padding: "17px",
+        padding: "16px",
     },
     '& .Network-text': {
         color: "#FFFFFF",
@@ -343,7 +345,7 @@ export const HomeStyle = styled('div')(({ theme }) => ({
             //fontSize: "50px",
         },
         '& .news-card': {
-            height: "618px",
+            // paddingBottom: "618px",
         },
 
 
