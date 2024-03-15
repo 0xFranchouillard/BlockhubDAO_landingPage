@@ -16,7 +16,7 @@ import MobileDrawer from './Mobiledrawer';
 
 export default function ButtonAppBar() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [navMarginTop, setNavMarginTop] = useState('10%');
+    const [navMarginTop, setNavMarginTop] = useState('13%');
     const navRef = useRef(null);
 
     useEffect(() => {
