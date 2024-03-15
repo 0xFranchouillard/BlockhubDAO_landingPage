@@ -15,7 +15,7 @@ export default function ButtonAppBar() {
             <div className='nav-position'>
                 <Container>
                    
-                    <AppBar position="static" className='Appbar-setting '>
+                    <AppBar position="static" className='Appbar-setting'>
                         <Toolbar>
                             <Grid container>
                                 <Grid item xs={5} sm={6}

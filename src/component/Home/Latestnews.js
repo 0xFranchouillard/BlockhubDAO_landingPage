@@ -15,7 +15,7 @@ export default function Investment() {
                             <Grid item xs={12} sm={8} md={6} lg={4}>
 
                                 <div className='news-card'>
-                                    <Link href="https://mirror.xyz/0xb69d053fA14F0CEAD7ec9C3D3153EcFF235E7aCD/CaaYqqi_qlqKPQ6ztzwGpxfTQehyrxaJzvFF2S2RNQI" underline ="none" target="_blank">
+                                    <Link href="https://mirror.xyz/0xb69d053fA14F0CEAD7ec9C3D3153EcFF235E7aCD/CaaYqqi_qlqKPQ6ztzwGpxfTQehyrxaJzvFF2S2RNQI" underline ="none" target="_blank" sx={{display: "flex", flexDirection:"column"}}>
                                     <Box component="img" src="/images/worlds.svg" width="100%" className='shutter-img'/>
                                     <div className='shtrpadign'>
                                         <Typography variant="h4" gutterBottom className='Asset-text'>
