@@ -30,8 +30,7 @@ export default function ButtonAppBar() {
       
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
-      
-        // Appeler calculateNavMarginTop après que le composant a été rendu et que le DOM a été mis à jour
+
         const id = requestAnimationFrame(() => {
           calculateNavMarginTop();
         });
