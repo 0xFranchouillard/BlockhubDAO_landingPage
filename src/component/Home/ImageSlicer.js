@@ -38,13 +38,10 @@ export default function ImageSlicer() {
 
     return (
         <div style={{ width: '100%', height: '100%', paddingTop: '20px'}}>
-             <div className='elipse-hero'
-          
-            />
+            <div className='elipse-hero' />
             <ReactCompareSlider
                 handle={<CustomHandle />}
                 itemTwo={
-                    <>
                     <div
                         style={{
                             clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}%  100%)`,
@@ -70,26 +67,20 @@ export default function ImageSlicer() {
                             }}
                         />
                     </div>
-
-                    </>
                 }
                 itemOne={
-                   <>
                     <div
                         style={{
                             clipPath: `polygon(0 0, 0 100%, ${sliderPosition}% 100%, ${sliderPosition}% 0)`,
                             position: 'relative',
                             height: '100%',
                             textAlign: 'center',
-                           
                         }}
                     >
                         <img
                             src="/images/PepeSilver.png"
                             alt="Image two"
-                            style={{ width: '100%',
-                        
-                        }}
+                            style={{ width: '100%' }}
                         />
                         <img
                             src="/images/headPepeSilver.png"
@@ -100,12 +91,11 @@ export default function ImageSlicer() {
                                 left: '50%',
                                 transform: 'translateX(-50%)',
                                 maxWidth: '46%',
-                                zIndex: 2, // Ajustement du niveau de z-index
+                                zIndex: 2,
                                 filter: 'grayscale(100%)',
                             }}
                         />
                     </div>
-                   </>
                 }
                 position={sliderPosition}
                 onPositionChange={handleSliderChange}
@@ -116,10 +106,9 @@ export default function ImageSlicer() {
                     flexGrow: 1,
                     width: '100%',
                     height: '100%',
-                    zIndex: 2, // Ajustement du niveau de z-index
+                    zIndex: 2, 
                 }}
             />
-           
         </div>
     );
 }
