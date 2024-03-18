@@ -16,35 +16,39 @@ import MobileDrawer from './Mobiledrawer';
 
 export default function ButtonAppBar() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [navMarginTop, setNavMarginTop] = useState('23%');
+    const [navMarginTop, setNavMarginTop] = useState('0%');
     const navRef = useRef(null);
     useEffect(() => {
         const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-            calculateNavMarginTop();
+          setScrollPosition(window.scrollY);
+          calculateNavMarginTop();
         };
-
+      
+        const handleResize = () => {
+          calculateNavMarginTop();
+        };
+      
         window.addEventListener('scroll', handleScroll);
-
+        window.addEventListener('resize', handleResize);
+      
+        // Appeler calculateNavMarginTop après que le composant a été rendu et que le DOM a été mis à jour
+        const id = requestAnimationFrame(() => {
+          calculateNavMarginTop();
+        });
+      
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('resize', handleResize);
+          cancelAnimationFrame(id);
         };
-    }, []);
-
-    const calculateNavMarginTop = () => {
+      }, []);
+    
+      const calculateNavMarginTop = () => {
         if (navRef.current) {
-            const newMarginTop = window.scrollY > 80 ? '5%' : (navRef.current.offsetHeight + 10) + 'px';
-            setNavMarginTop(newMarginTop);
+          const newMarginTop = window.scrollY > 80 ? '5%' : (navRef.current.offsetHeight + 10) + 'px';
+          setNavMarginTop(newMarginTop);
         }
-    };
-
-    // Appel de calculateNavMarginTop lorsque la barre de navigation est montée dans le rendu
-    useEffect(() => {
-        calculateNavMarginTop();
-    }, [navRef.current]); 
-    useEffect(() => {
-        calculateNavMarginTop();
-    }, [])
+      };
 
     return (
         <HomeStyle>
